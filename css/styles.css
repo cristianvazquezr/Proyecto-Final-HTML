@@ -1,0 +1,768 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(26, 24, 24);
+}
+
+/*Formato para el contendor principal*/
+.contendor_principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*formato para el header/fotter*/
+
+header{ 
+    display: flex;   
+    background-color: rgb(59, 59, 59,1 );
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    gap:15%;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+      
+}
+.barra_navegacion{
+    display: flex;
+    gap:5%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    
+}
+.navegacion{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap:3%;
+    width: 65%;
+    flex-wrap: wrap;
+    
+}
+
+.nav_links{
+    padding: 4px;  
+}
+
+.nav_links a{
+    color:beige;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.logo{
+    display: flex;
+    width: 118px;
+    height: 79px;
+    opacity: 100%;
+}
+
+  
+.links_iconos{
+    display: flex;
+    font-size: x-large;
+    gap: 20px;
+    
+}
+.links_iconos a i{
+    color: blanchedalmond;
+}
+
+
+
+/*formato para primera seccion(introduccion) */
+
+.introduccion{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(0,0,0,.5),rgb(0,0,0,.5)), url(../imagenes/Comida-inicio.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.texto_intro{
+    display: flex;
+    flex-direction: column;
+    color: beige;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    gap: 10px;
+}
+
+.texto_intro h1{
+    font-weight: 900;
+    font-size: 50px;
+}
+.texto_intro h4{
+    font-weight: 200;
+    font-size: larger;
+}
+
+/*formato segunda seccion(descripcion del chef) */
+
+
+.el_chef{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+
+.descripcion_chef{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 30%;
+    height: 350px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.descripcion_chef p{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-right: 5%;
+    font-style: italic;
+    overflow: auto;
+    
+
+}
+.descripcion_chef h2{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-right: 5%;
+    letter-spacing: 0.05cm;
+
+}
+
+.imagen_chef{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/chef.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+
+
+}
+
+/*seccion productos*/
+
+.nuestros_productos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
+.titulo_productos{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    padding:1%;
+
+
+}
+
+.productos{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.productos a{
+    text-decoration: none;
+}
+
+
+.productos img{
+    aspect-ratio: 3/4;
+    width:70%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+.productos h3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding:2%;
+    width: 70%;
+}
+
+.producto_seccion{
+    display: flex;
+    flex-direction: column;
+    
+}
+/* linea divisoria*/
+
+hr {
+    border: 0;
+    height: 2px; 
+    text-align: center; 
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+}
+
+/* Contacto y ubicación*/
+.ubicacion_contacto_NS{
+    display:flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
+
+.ubicacion iframe{
+    width:70%;    
+
+}
+
+.ubicacion{
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+    height: 50%;
+    
+}
+.ubicacion p{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 90%;
+    font-weight: 300;
+    padding:3%;
+    width: 75%;
+    
+    
+}
+
+.contacto{
+    display:flex;
+    flex-direction: column;
+    width: 20%;
+
+}
+
+.contacto div{
+    padding-top: 5%;
+}
+
+.contacto p{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    padding:2%;
+    width: 100%;
+}
+
+
+.newslatters{
+    display:flex;
+    flex-direction: column;
+}
+
+.newslatters div{
+    padding-top: 5%;
+
+}
+
+.newslatters p{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 300;
+    padding:2%;
+    width: 100%;
+}
+
+
+.newslatters button{
+    background: linear-gradient(to left, rgb(83, 83, 83), rgb(255, 255, 255), rgb(83, 83, 83));
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 800;
+
+}
+
+.redes{
+    display: flex;
+    align-items: flex-start;
+    gap:20px;
+}
+
+.redes a i{
+    color: blanchedalmond;
+    font-size: xx-large;
+}
+
+.ubicacion_contacto_NS h4{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding:2%;
+    width: 70%;
+}
+
+/*formato footer*/
+
+.pie{
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+.pie img{
+    aspect-ratio: 3/2;
+    width: 5%;
+}
+
+.derechoautor{
+    display: flex;
+    padding-left: 35%;
+    align-items: center;
+    
+}
+
+.derechoautor p{
+    text-align: center;
+    width: 60%;
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: small;
+    font-weight: 300;
+}
+
+
+
+/* FORMATO PARA ARGENTINIANFOOD*/
+
+
+/*formato primera seccion(descripcion del producto) */
+
+
+.argenta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+
+.descripcion_argenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 30%;
+    height: 350px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.descripcion_argenta p{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-right: 5%;
+    font-style: italic;
+    overflow: auto;
+    
+
+}
+.descripcion_argenta h2{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-right: 5%;
+    letter-spacing: 0.05cm;
+
+}
+
+.imagen_argenta{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/*seccion productos argentinos*/
+
+.nuestros_productos_arg{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
+.titulo_productos_arg{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    padding:1%;
+}
+
+.productos_arg{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.productos_arg img{
+    aspect-ratio: 3/4;
+    width:70%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+.productos_arg h3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding:2%;
+    width: 55%;
+}
+
+.producto_seccion_arg{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.anadir_carro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.anadir_carro i{
+    color: azure;
+    font-size: xx-large;
+    padding-top: 1.5%;
+}
+
+/* FORMATO PARA ITALIANFOOD*/
+
+
+/*formato primera seccion(descripcion del producto) */
+
+
+.italiana{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+
+.descripcion_italiana{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 30%;
+    height: 350px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.descripcion_italiana p{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-right: 5%;
+    font-style: italic;
+    overflow: auto;
+    
+
+}
+.descripcion_italiana h2{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-right: 5%;
+    letter-spacing: 0.05cm;
+
+}
+
+.imagen_italiana{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastas-italiana.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/*seccion productos italianos*/
+
+.nuestros_productos_it{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
+.titulo_productos_it{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    padding:1%;
+}
+
+.productos_it{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.productos_it img{
+    aspect-ratio: 3/4;
+    width:70%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+.productos_it h3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding:2%;
+    width: 55%;
+}
+
+.producto_seccion_it{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* FORMATO PARA ASIANFOOD*/
+
+
+/*formato primera seccion(descripcion del producto) */
+
+.asiatica{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+
+.descripcion_asiatica{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 30%;
+    height: 350px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.descripcion_asiatica p{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-right: 5%;
+    font-style: italic;
+    overflow: auto;
+    
+
+}
+.descripcion_asiatica h2{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-right: 5%;
+    letter-spacing: 0.05cm;
+
+}
+
+.imagen_asiatica{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+/*seccion productos asiaticos*/
+
+.nuestros_productos_asiaticos{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 2%;
+}
+.titulo_productos_asiaticos{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 300;
+    padding:1%;
+}
+
+.productos_asiaticos{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.productos_asiaticos img{
+    aspect-ratio: 3/4;
+    width:70%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+.productos_asiaticos h3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: large;
+    font-weight: 500;
+    padding:2%;
+    width: 55%;
+}
+
+.producto_seccion_asiaticos{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* FORMATO PARA recetas*/
+
+
+/*formato primera seccion(descripcion de recetas) */
+
+
+.receta{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+
+.descripcion_receta{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 30%;
+    height: 350px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+}
+
+.descripcion_receta p{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    text-align: justify;
+    font-family: 'Prompt', sans-serif;
+    font-weight: 300;
+    padding-right: 5%;
+    font-style: italic;
+    overflow: auto;
+    
+
+}
+.descripcion_receta h2{
+    color: rgb(209, 207, 207);
+    padding: 2%;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 900;
+    font-size: xx-large;
+    padding-right: 5%;
+    letter-spacing: 0.05cm;
+
+}
+
+.imagen_receta{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
