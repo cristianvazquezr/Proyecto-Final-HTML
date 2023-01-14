@@ -452,27 +452,23 @@ hr {
 }
 .productos_arg img{
     aspect-ratio: 3/4;
-    width:75%;
+    width:100%;
     object-fit: cover;
     border-radius: 3%;
 }
 
 .productos_arg p{
-    width:80%;
+    width:100%;
     color:rgb(114, 114, 114)
 }
-
-/*Para una transicion un poco mas prolija modifico el ancho de la imagen y del parrafo en la medida md*/
-
-@media screen  and (min-width: 768px){
-    .producto_seccion_arg img{ 
-        width: 100%;
-    }
-    .producto_seccion_arg p{ 
-        width: 100%;
-    }
+.descripcion_pie_arg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
+.descripcion_pie_arg a{
+    width: 100px;
+}
 
 .productos_arg {
     display:flex;
@@ -481,11 +477,10 @@ hr {
     justify-content: center;
 }
 
-
 .productos_arg h3{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: x-large;
+    font-size: large;
     font-weight: 500;
     padding:2%;
     width: 100%;
@@ -499,6 +494,32 @@ hr {
 }
 
 /*Propiedades carrusel*/
+
+.carrusel_recetas_arg{
+    display: none;
+}
+.carrusel_recetas2_arg{
+    width: 80%;
+    
+ }
+
+.carrusel_recetas2_arg p{
+    color:rgb(114, 114, 114);
+}
+.carrusel_recetas2_arg H3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding:2%;
+    width: 100%;
+}
+ 
+.carrusel_recetas_arg img{
+    object-fit: cover;
+    border-radius: 3%;
+}
+
 .anadir_carro{
     display: flex;
     flex-direction: row;
@@ -511,48 +532,19 @@ hr {
     padding-top: 1.5%;
 }
 
-.carrusel_recetas{
-    display: none;
-}
-.carrusel_recetas2{
-   margin-left: 25%;
-}
-.carrusel_recetas2 p{
-    color:rgb(114, 114, 114);
-}
-.carrusel_recetas2 H3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: x-large;
-    font-weight: 500;
-    padding:2%;
-    width: 100%;
-}
- 
- 
-.carrusel_recetas img{
-    object-fit: cover;
-    border-radius: 3%;
-}
-
 /*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
 @media screen and (max-width:576px){
-    .carrusel_recetas{
-        display: block;
+    .carrusel_recetas_arg{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .productos_arg{
         display: none;
 
     }
     .producto_seccion_arg{
-        width: 50%;
-    }
-    .productos_it{
-        display: none;
-
-    }
-    .producto_seccion_it{
-        width: 50%;
+        width: 100%;
     }
 
 }
@@ -639,27 +631,27 @@ hr {
 
 .productos_it img{
     aspect-ratio: 3/4;
-    width:75%;
+    width:100%;
     object-fit: cover;
     border-radius: 3%;
 }
 
 
 .productos_it p{
-    width:80%;
+    width:100%;
     color:rgb(114, 114, 114)
 }
 
-/*Para una transicion un poco mas prolija modifico el ancho de la imagen y del parrafo en la medida md*/
-
-@media screen  and (min-width: 768px){
-    .producto_seccion_it img{ 
-        width: 100%;
-    }
-    .producto_seccion_it p{ 
-        width: 100%;
-    }
+.descripcion_pie_it{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.descripcion_pie_it a{
+    width: 100px;
+}
+
 
 .productos_it{
     display:flex;
@@ -684,6 +676,51 @@ hr {
     border: none; 
     
 }
+
+/*Propiedades carrusel*/
+
+.carrusel_recetas_it{
+    display: none;
+}
+
+.carrusel_recetas2_it{
+   width: 80%;
+}
+.carrusel_recetas2_it p{
+    color:rgb(114, 114, 114);
+}
+.carrusel_recetas2_it H3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding:2%;
+    width: 100%;
+}
+ 
+ 
+.carrusel_recetas_it img{
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
+@media screen and (max-width:576px){
+    .carrusel_recetas_it{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .productos_it{
+        display: none;
+
+    }
+    .producto_seccion_it{
+        width: 100%;
+    }
+}
+
+
 
 /* FORMATO PARA ASIANFOOD*/
 
