@@ -26,6 +26,7 @@ header{
     flex-direction: row;
     position: sticky;
     top:0;
+    z-index: 100;
       
 }
 .barra_navegacion{
@@ -449,35 +450,55 @@ hr {
     font-weight: 300;
     padding:1%;
 }
+.productos_arg img{
+    aspect-ratio: 3/4;
+    width:75%;
+    object-fit: cover;
+    border-radius: 3%;
+}
 
-.productos_arg{
+.productos_arg p{
+    width:80%;
+    color:rgb(114, 114, 114)
+}
+
+/*Para una transicion un poco mas prolija modifico el ancho de la imagen y del parrafo en la medida md*/
+
+@media screen  and (min-width: 768px){
+    .producto_seccion_arg img{ 
+        width: 100%;
+    }
+    .producto_seccion_arg p{ 
+        width: 100%;
+    }
+}
+
+
+.productos_arg {
     display:flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
 }
 
-.productos_arg img{
-    aspect-ratio: 3/4;
-    width:70%;
-    object-fit: cover;
-    border-radius: 3%;
-}
+
 .productos_arg h3{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
+    font-size: x-large;
     font-weight: 500;
     padding:2%;
-    width: 55%;
+    width: 100%;
 }
 
 .producto_seccion_arg{
     display: flex;
     flex-direction: column;
-    
+    background-color:rgb(26, 24, 24) ;
+    border: none;    
 }
 
+/*Propiedades carrusel*/
 .anadir_carro{
     display: flex;
     flex-direction: row;
@@ -488,6 +509,52 @@ hr {
     color: azure;
     font-size: xx-large;
     padding-top: 1.5%;
+}
+
+.carrusel_recetas{
+    display: none;
+}
+.carrusel_recetas2{
+   margin-left: 25%;
+}
+.carrusel_recetas2 p{
+    color:rgb(114, 114, 114);
+}
+.carrusel_recetas2 H3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding:2%;
+    width: 100%;
+}
+ 
+ 
+.carrusel_recetas img{
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
+@media screen and (max-width:576px){
+    .carrusel_recetas{
+        display: block;
+    }
+    .productos_arg{
+        display: none;
+
+    }
+    .producto_seccion_arg{
+        width: 50%;
+    }
+    .productos_it{
+        display: none;
+
+    }
+    .producto_seccion_it{
+        width: 50%;
+    }
+
 }
 
 /* FORMATO PARA ITALIANFOOD*/
@@ -570,6 +637,30 @@ hr {
     padding:1%;
 }
 
+.productos_it img{
+    aspect-ratio: 3/4;
+    width:75%;
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+
+.productos_it p{
+    width:80%;
+    color:rgb(114, 114, 114)
+}
+
+/*Para una transicion un poco mas prolija modifico el ancho de la imagen y del parrafo en la medida md*/
+
+@media screen  and (min-width: 768px){
+    .producto_seccion_it img{ 
+        width: 100%;
+    }
+    .producto_seccion_it p{ 
+        width: 100%;
+    }
+}
+
 .productos_it{
     display:flex;
     flex-direction: row;
@@ -577,24 +668,20 @@ hr {
     justify-content: center;
 }
 
-.productos_it img{
-    aspect-ratio: 3/4;
-    width:70%;
-    object-fit: cover;
-    border-radius: 3%;
-}
 .productos_it h3{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: large;
     font-weight: 500;
     padding:2%;
-    width: 55%;
+    width: 100%;
 }
 
 .producto_seccion_it{
     display: flex;
     flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    border: none; 
     
 }
 

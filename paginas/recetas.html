@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="../css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/9f41489da6.js" crossorigin="anonymous"></script>
     <title>Chef Christofer</title>
@@ -44,76 +46,179 @@
     
     <!--linea divisoria-->
     <hr>
-
+    <div>
     <section id="nuestros_productos_it" class="nuestros_productos_it">
-            <div class="titulo_productos_it">
-                <h2>Nuestras recetas italianas</h2>
+        <div class="titulo_productos_it">
+            <h2>Nuestras recetas italianas</h2>
+        </div>
+            <!--pongo un carrusel que se activara cuando el tamano es chico-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carrusel_recetas">
+            <div class="carousel-inner carrusel_recetas2">
+                <div class="card producto_seccion_it carousel-item active">
+                    <img src="../imagenes/pizzaNapolitana.png" class="card-img-top d-block w-100" alt="Las mejores pizzas">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Pizza napolitana</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_it carousel-item">
+                    <img src="../imagenes/ravioles.png" class="card-img-top d-block w-100" alt="Los mejores ravioles del mundo">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Ravioles de verduras</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_it carousel-item">
+                    <img src="../imagenes/tallarines.png" class="card-img-top d-block w-100" alt="Los mejores tallarines del mundo">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Tallarines</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_it carousel-item">
+                    <img src="../imagenes/canelones.png" class="card-img-top d-block w-100" alt="Los mejores canelones del planeta">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Canelones</h3>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
             </div>
-            <div class="productos_it">
-                <div   class="producto_seccion_it">
-                    <img src="../imagenes/pizzaNapolitana.png" alt="Las mejores pizzas">
-                    <div class="anadir_carro">
-                        <h3>Pizza napolitana</h3>
-                        <i class="fa-solid fa-cart-plus"></i>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Seccion visible para pantallas mayores a celular (sin carrusel)-->
+        <div class="productos_it conteiner">
+            
+            <div class="row">
+                <div class="card producto_seccion_it col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/pizzaNapolitana.png" class="card-img-top" alt="La verdadera pizza napolitana">
+                    <div class="card-body">
+                      <h3 class="card-title">Pizza napolitana</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
                     </div>
                 </div>
-                <div   class="producto_seccion_it">
-                    <img src="../imagenes/ravioles.png" alt="Los mejores ravioles de verduras">
-                    <div class="anadir_carro">
-                        <h3>Ravioles de verduras</h3>
-                        <i class="fa-solid fa-cart-plus"></i>
+                <div class="card producto_seccion_it col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/ravioles.png" class="card-img-top" alt="los mejores ravioles italianos">
+                    <div class="card-body">
+                      <h3 class="card-title">Ravioles de verdudas</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
                     </div>
                 </div>
-                <div   class="producto_seccion_it">
-                    <img src="../imagenes/tallarines.png" alt="los mejores tallarines">
-                    <div class="anadir_carro">
-                        <h3>Tallarines caseros</h3>
-                        <i class="fa-solid fa-cart-plus"></i>
+                <div class="card producto_seccion_it col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/tallarines.png" class="card-img-top" alt="Los mejores tallarines del planeta">
+                    <div class="card-body">
+                      <h3 class="card-title">tallarines</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
                     </div>
                 </div>
-                <div class="producto_seccion_it">
-                    <img src="../imagenes/canelones.png" alt="Los mejores canelones">
-                    <div class="anadir_carro">
-                        <h3>canelones</h3>
-                        <i class="fa-solid fa-cart-plus"></i>
+                <div class="card producto_seccion_it col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/canelones.png" class="card-img-top" alt="Los mejores canelones del planeta">
+                    <div class="card-body">
+                      <h3 class="card-title">canelones</h3>
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
                     </div>
                 </div>
             </div>
-    </section>
-
+        </div>
     <hr>
-
     <section id="nuestros_productos_arg" class="nuestros_productos_arg">
         <div class="titulo_productos_arg">
             <h2>Nuestras recetas argentas</h2>
         </div>
-        <div class="productos_arg">
-            <div   class="producto_seccion_arg">
-                <img src="../imagenes/empanadas-salteñas.png" alt="Las mejores empanadas">
-                <div class="anadir_carro">
-                    <h3>Empanadas salteñas</h3>
-                    <i class="fa-solid fa-cart-plus"></i>
+        <!--pongo un carrusel que se activara cuando el tamano es chico-->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade carrusel_recetas">
+            <div class="carousel-inner carrusel_recetas2">
+                <div class="card producto_seccion_arg carousel-item active">
+                    <img src="../imagenes/empanadas-salteñas.png" class="card-img-top d-block w-100" alt="...">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Empanadas salteñas</h3>
+                    <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_arg carousel-item">
+                    <img src="../imagenes/ribs-cerdo.png" class="card-img-top d-block w-100" alt="...">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Ribs de cerdo</h3>
+                    <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las masss ricas que vas a probar.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_arg carousel-item">
+                    <img src="../imagenes/locro-argentino.png" class="card-img-top d-block w-100" alt="...">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Locro patrio</h3>
+                    <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_arg carousel-item">
+                    <img src="../imagenes/mollejas.png" class="card-img-top d-block w-100" alt="...">
+                    <div class="card-body w-100">
+                    <h3 class="card-title">Mollejas al disco</h3>
+                    <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                    <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
                 </div>
             </div>
-            <div   class="producto_seccion_arg">
-                <img src="../imagenes/ribs-cerdo.png" alt="Los mejores ribs de cerdo">
-                <div class="anadir_carro">
-                    <h3>Ribs de cerdo</h3>
-                    <i class="fa-solid fa-cart-plus"></i>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--Seccion visible para pantallas mayores a celular (sin carrusel)-->
+        <div class="productos_arg conteiner">
+            
+            <div class="row">
+                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/empanadas-salteñas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Empanadas salteñas</h3>
+                      <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
                 </div>
-            </div>
-            <div   class="producto_seccion_arg">
-                <img src="../imagenes/locro-argentino.png" alt="el mejor locro argentino">
-                <div class="anadir_carro">
-                    <h3>Locro patrio</h3>
-                    <i class="fa-solid fa-cart-plus"></i>
+                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/ribs-cerdo.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Ribs de cerdo</h3>
+                      <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
                 </div>
-            </div>
-            <div class="producto_seccion_arg">
-                <img src="../imagenes/mollejas.png" alt="La mejor molleja al verdeo">
-                <div class="anadir_carro">
-                    <h3>mollejas al disco</h3>
-                    <i class="fa-solid fa-cart-plus"></i>
+                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/locro-argentino.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Locro patrio</h3>
+                      <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
+                </div>
+                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
+                    <img src="../imagenes/mollejas.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title">Mollejas al disco</h3>
+                      <p class="card-text">Empanada salteñas de carne cortada a cuchillo.De las mas ricas que vas a probar.</p>
+                      <a href="#" class="btn btn-primary">Añadir</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -159,6 +264,8 @@
     </footer>
     </div>
 
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
 </body>
 </html>
