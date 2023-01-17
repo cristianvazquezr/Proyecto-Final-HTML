@@ -6,6 +6,10 @@
 body{
     background-color: rgb(26, 24, 24);
 }
+/* redefino el margin de los parrafos por que boostrap me los modifica con el reboot.scss*/
+body p{
+    margin-bottom: 0;
+}
 
 /*Formato para el contendor principal*/
 .contendor_principal{
@@ -19,8 +23,6 @@ body{
 header{ 
     display: flex;   
     background-color: rgb(59, 59, 59,1 );
-    padding-left: 10%;
-    padding-right: 10%;
     width: 100%;
     gap:15%;
     flex-direction: row;
@@ -29,28 +31,38 @@ header{
     z-index: 100;
       
 }
+
+.encabezado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo-encabezado{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
 .barra_navegacion{
     display: flex;
     gap:5%;
-    width: 100%;
     flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    
-    
+    justify-content: flex-end;
 }
 .navegacion{
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    gap:3%;
-    width: 65%;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+    border: none;
     
 }
 
 .nav_links{
-    padding: 4px;  
+    padding: 4px;
+}
+.nav_links  a{
+    border-radius: var(--bs-nav-tabs-border-radius);
 }
 
 .nav_links a{
@@ -61,22 +73,99 @@ header{
     text-decoration: none;
     
 }
-.logo{
-    display: flex;
-    width: 118px;
-    height: 79px;
-    opacity: 100%;
-}
-
   
 .links_iconos{
     display: flex;
     font-size: x-large;
     gap: 20px;
-    
+    align-items: center;
 }
 .links_iconos a i{
     color: blanchedalmond;
+}
+
+/* estilo para el menu tipo hamburguesa*/
+.encabezado_hamburguesa{
+    display: none;
+    padding: 0;
+    background-color: rgb(59, 59, 59,1 );
+}
+.contenedor_hamburguesa{
+    background-color: rgb(59, 59, 59,1 );
+}
+
+.boton_navbar{
+    border-color:blanchedalmond;
+
+}
+.boton_navbar span{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+.boton_navbar span i{
+    color: blanchedalmond;
+    font-size: xx-large;
+}
+.menu-interno{
+    background-color: rgb(59, 59, 59,1);
+}
+.logo-navbar{
+    height: 50px;
+    width: 50px;
+}
+.links_iconos button{
+    color: blanchedalmond;
+    font-size: medium;
+}
+.btn-cerrar{
+    background-color: transparent;
+    border:none;
+}
+
+.lista-menu a{
+    color: blanchedalmond;
+}
+
+.lista-interna{
+    background-color: rgb(37, 37, 37);
+}
+
+.lista-interna a{
+    color: blanchedalmond;
+}
+
+.submenu-productos{
+    background-color: rgb(56, 56, 56) ;
+}
+.dropdown-buscar{
+    transform: translate(100px, 70px)!important;
+    width: 320px;
+
+}
+.input-busqueda{
+    width: auto;
+}
+.formulario-busqueda{
+    margin-left: 2%;
+}
+.links_iconos i{
+    color: blanchedalmond;
+    font-size: x-large;
+}
+
+
+@media screen and (max-width:920px) {
+    .encabezado_hamburguesa{
+        display: block;
+    }
+
+    .encabezado{
+        display: none;  
+    }
+    
 }
 
 
@@ -342,31 +431,37 @@ hr {
 
 .pie{
     display: flex;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 0.1rem;
     
 }
 .pie img{
     aspect-ratio: 3/2;
-    width: 5%;
+    width: 118px;
 }
 
 .derechoautor{
     display: flex;
-    padding-left: 35%;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 
 .derechoautor p{
     text-align: center;
-    width: 60%;
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: small;
-    font-weight: 300;
+    
+}
+
+@media screen and (max-width:576px) {
+    .imagen-pie{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    
 }
 
 
@@ -465,9 +560,14 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
 }
 .descripcion_pie_arg a{
     width: 100px;
+}
+
+.descripcion_pie_arg p{
+    padding-bottom: 6%;
 }
 
 .productos_arg {
@@ -520,18 +620,6 @@ hr {
     border-radius: 3%;
 }
 
-.anadir_carro{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
-.anadir_carro i{
-    color: azure;
-    font-size: xx-large;
-    padding-top: 1.5%;
-}
-
 /*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
 @media screen and (max-width:576px){
     .carrusel_recetas_arg{
@@ -548,6 +636,19 @@ hr {
     }
 
 }
+
+.anadir_carro{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.anadir_carro i{
+    color: azure;
+    font-size: xx-large;
+    padding-top: 1.5%;
+}
+
 
 /* FORMATO PARA ITALIANFOOD*/
 
@@ -646,12 +747,15 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 0;
 }
-
 .descripcion_pie_it a{
     width: 100px;
 }
 
+.descripcion_pie_it p{
+    padding-bottom: 6%;
+}
 
 .productos_it{
     display:flex;
@@ -889,4 +993,34 @@ hr {
     background-position: center;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
+}
+
+@media screen and (max-width:720px) {
+    .imagen_receta{
+        display: none;
+    }
+    .descripcion_receta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+
+    }
+
+    .descripcion_receta p{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 46%, rgba(185,185,185,1) 47%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+        padding: 2%;
+        text-align: justify;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 300;
+        padding-right: 5%;
+        font-style: italic;
+        
+    }
+    
 }
