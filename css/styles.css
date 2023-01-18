@@ -89,6 +89,9 @@ header{
     display: none;
     padding: 0;
     background-color: rgb(59, 59, 59,1 );
+    
+
+    
 }
 .contenedor_hamburguesa{
     background-color: rgb(59, 59, 59,1 );
@@ -159,8 +162,12 @@ header{
 
 @media screen and (max-width:920px) {
     .encabezado_hamburguesa{
-        display: block;
+        display: flex;
+        position: sticky;
+        width: 100%;      
     }
+    
+    
 
     .encabezado{
         display: none;  
@@ -336,66 +343,56 @@ hr {
 }
 
 .ubicacion iframe{
-    width:70%;    
+    width:150px;  
 
 }
+
 
 .ubicacion{
     display:flex;
     flex-direction: column;
-    width: 20%;
-    height: 50%;
-    
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
 }
 .ubicacion p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 90%;
-    font-weight: 300;
-    padding:3%;
-    width: 75%;
-    
+    font-weight: 300;  
     
 }
 
 .contacto{
     display:flex;
     flex-direction: column;
-    width: 20%;
-
+    flex-wrap: wrap;
+    padding-bottom: 15px;
 }
 
-.contacto div{
-    padding-top: 5%;
-}
 
 .contacto p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 100%;
     font-weight: 300;
-    padding:2%;
-    width: 100%;
 }
 
 
 .newslatters{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.newslatters div{
-    padding-top: 5%;
-
-}
 
 .newslatters p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 100%;
     font-weight: 300;
-    padding:2%;
-    width: 100%;
 }
 
 
@@ -409,8 +406,12 @@ hr {
 
 .redes{
     display: flex;
-    align-items: flex-start;
-    gap:20px;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    position: fixed;
+    bottom: -300px;
+    z-index: 200;
 }
 
 .redes a i{
@@ -423,8 +424,24 @@ hr {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: x-large;
     font-weight: 500;
-    padding:2%;
-    width: 70%;
+}
+
+@media screen and (max-width:576px) {
+    .ubicacion_contacto_NS{
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 1%;
+        justify-content: space-between;
+        justify-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+    }
+
+    .redes{
+        position:absolute;
+        
+    }
+    
 }
 
 /*formato footer*/
@@ -590,7 +607,10 @@ hr {
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
-    border: none;    
+    border: none;
+    gap: 7px;
+    padding-bottom: 10px;
+
 }
 
 /*Propiedades carrusel*/
@@ -719,7 +739,7 @@ hr {
     flex-direction: column;
     padding-top: 1%;
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 2%;
     padding-bottom: 2%;
 }
 .titulo_productos_it{
@@ -777,7 +797,9 @@ hr {
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
-    border: none; 
+    border: none;
+    gap: 7px;
+    padding-bottom: 10px;
     
 }
 
