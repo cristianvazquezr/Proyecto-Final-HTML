@@ -180,7 +180,6 @@ header{
 /*formato para primera seccion(introduccion) */
 
 .introduccion{
-    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -266,8 +265,33 @@ header{
     background-position: center;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
+}
 
+@media screen and (max-width:720px) {
+    .imagen_chef{
+        display: none;
+    }
+    .descripcion_chef{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/chef.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
 
+    }
+
+    .descripcion_chef p{
+        color: antiquewhite; 
+        padding: 2%;
+        text-align: justify;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 300;
+        padding-right: 5%;
+        font-style: italic;
+        
+    }
 }
 
 /*seccion productos*/
@@ -277,7 +301,7 @@ header{
     flex-direction: column;
     padding-top: 1%;
     padding-left: 1%;
-    padding-right: 1%;
+    padding-right: 2%;
     padding-bottom: 2%;
 }
 .titulo_productos{
@@ -286,8 +310,32 @@ header{
     font-size: large;
     font-weight: 300;
     padding:1%;
+}
 
+.productos img{
+    aspect-ratio: 3/4;
+    width:100%;
+    object-fit: cover;
+    border-radius: 3%;
+}
 
+.productos p{
+    width:100%;
+    color:rgb(114, 114, 114)
+}
+
+.descripcion_pie{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+.descripcion_pie a{
+    width: 100px;
+}
+
+.descripcion_pie p{
+    padding-bottom: 6%;
 }
 
 .productos{
@@ -297,29 +345,22 @@ header{
     justify-content: center;
 }
 
-.productos a{
-    text-decoration: none;
-}
-
-
-.productos img{
-    aspect-ratio: 3/4;
-    width:70%;
-    object-fit: cover;
-    border-radius: 3%;
-}
 .productos h3{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: large;
     font-weight: 500;
     padding:2%;
-    width: 70%;
+    width: 100%;
 }
 
 .producto_seccion{
     display: flex;
     flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    border: none;
+    gap: 7px;
+    padding-bottom: 10px;
     
 }
 /* linea divisoria*/
@@ -385,6 +426,7 @@ hr {
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
+    padding-bottom: 1rem;
 }
 
 
@@ -409,9 +451,7 @@ hr {
     align-items: center;
     gap: 15px;
     justify-content: center;
-    position: fixed;
-    bottom: -300px;
-    z-index: 200;
+    
 }
 
 .redes a i{
@@ -438,7 +478,9 @@ hr {
     }
 
     .redes{
-        position:absolute;
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
         
     }
     
@@ -543,6 +585,34 @@ hr {
     background-position: center;
     border-top-right-radius: 3%;
     border-bottom-right-radius: 3%;
+}
+
+@media screen and (max-width:720px) {
+    .imagen_argenta{
+        display: none;
+    }
+    .descripcion_argenta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+
+    }
+
+    .descripcion_argenta p{
+        color:antiquewhite; 
+        padding: 2%;
+        text-align: justify;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 300;
+        padding-right: 5%;
+        font-style: italic;
+        
+    }
+    
 }
 
 /*seccion productos argentinos*/

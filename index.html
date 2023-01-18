@@ -4,31 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://kit.fontawesome.com/9f41489da6.js" crossorigin="anonymous"></script>
     <title>Chef Christofer</title>
     <link rel="icon" type="image/png" href="./imagenes/favicon.png"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap" rel="stylesheet"><!--font-->
 
+
 </head>
 <body>
     <div class="contendor_principal">
         <header>
-            <img class="logo" src="./imagenes/Logo.png" alt="Logo del mejor lugar de comidas">
-            <nav class="barra_navegacion">
-                <ul class="navegacion">
-                    <li class="nav_links"><a href="./index.html">Inicio</a></li>
-                    <li class="nav_links"><a href="#nuestros_productos">Productos</a></li>
-                    <li class="nav_links"><a href="./paginas/recetas.html">Recetas</a></li>
-                    <li class="nav_links"><a href="#el_chef_christofer">Quienes Somos</a></li>
-                    <li class="nav_links"><a href="#contacto">Contacto</a></li>    
-                </ul>
-                <div class="links_iconos">
-                    <a href="./index.html"><i class="fa-solid fa-user"></i></a>
-                    <a href="./index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+
+            <!--Cuando la pantalla es mayor a 920px uso menu desplegado-->
+
+            <div class="row encabezado">
+                <div class="col-2 logo-encabezado">
+                    <img class="logo" src="./imagenes/Logo.png" alt="Logo del mejor lugar de comidas">
                 </div>
-            </nav> 
+                <div class="col-10">
+                    <nav class="barra_navegacion">
+                        <ul class="nav nav-tabs navegacion">
+                            <li class="nav-item nav_links">
+                              <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item nav_links dropdown">
+                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="./index.html#nuestros_productos" role="button" aria-expanded="false">Productos</a>
+                              <ul class="dropdown-menu submenu-productos">
+                                <li class="nav_links"><a class="dropdown-item" href="./paginas/argentinian_food.html">Argentinian food</a></li>
+                                <li class="nav_links"><a class="dropdown-item" href="./paginas/italian_food.html">Italian Food</a></li>
+                                <li class="nav_links"><a class="dropdown-item" href="./paginas/asian_food.html">Asian Food</a></li>
+                                <li class="nav_links"><a class="dropdown-item" href="./paginas/american_food.html">American food</a></li>
+                              </ul>
+                            </li>
+                            <li class="nav-item nav_links">
+                              <a class="nav-link" href="./paginas/recetas.html">Recetas</a>
+                            </li>
+                            <li class="nav-item nav_links">
+                              <a class="nav-link" href="./index.html#el_chef_christofer">Quienes somos</a>
+                            </li>
+                            <li class="nav-item nav_links">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                              </li>
+                          </ul>
+                        <div class="links_iconos">
+                            <div class="dropdown">
+                                <i class="fa-solid fa-magnifying-glass" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu dropdown-menu-dark dropdown-buscar">
+                                    <form class="d-flex mt-1 formulario-busqueda" role="search">
+                                        <input class="form-control input-busqueda me-1" type="search" placeholder="Search" aria-label="Search">
+                                        <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </ul>
+                            </div>
+                            <a href="#"><i class="fa-solid fa-user"></i></a>
+                            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                            
+                        </div>
+                    </nav>
+                </div>    
+            </div> 
+
+            <!--Cuando la pantalla es menor a 920px uso menu hamburguesa-->
+            <nav class="navbar bg-body-tertiary fixed-top encabezado_hamburguesa">
+                <div class="container-fluid contenedor_hamburguesa">
+                  <a href="./index.html"><img class="logo" src="./imagenes/Logo.png" alt="Logo del mejor lugar de comidas"></a>
+                  <button class="navbar-toggler boton_navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                  </button>
+                  <div class="offcanvas offcanvas-end menu-interno" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <img class="logo-navbar" src="./imagenes/logo-sin-texto.png" alt="Logo del mejor lugar de comidas">
+                        <div class="links_iconos">
+                            <a href="./index.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <button type="button" class="btn-cerrar" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                        </div>
+                    </div>
+                    <div class="offcanvas-body lista-menu">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos
+                            </a>
+                            <ul class="dropdown-menu lista-interna">
+                                <li><a class="dropdown-item" href="./paginas/argentinian_food.html">Argentian food</a></li>
+                                <li><a class="dropdown-item" href="./paginas/italian_food.html">Italian food</a></li>
+                                <li><a class="dropdown-item" href="./paginas/asian_food.html">Asian food</a></li>
+                                <li><a class="dropdown-item" href="./paginas/american_food.html">American food</a></li>
+                            </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/recetas.html">Recetas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html#el_chef_christofer">Quienes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contacto</a>
+                            </li>
+                        </ul>
+                      <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form>
+                    </div>
+                </div>
+            </nav>
         </header>
+
         <section class=introduccion>
                 <div class="texto_intro">
                     <h1>Chef Christofer</h1>
@@ -51,53 +138,111 @@
         <hr>
 
         <section id="nuestros_productos" class="nuestros_productos">
-                <div class="titulo_productos">
-                    <h2>Nuestros productos</h2>
+            <div class="titulo_productos">
+                <h2>Nuestras productos</h2>
+            </div>
+                <!--pongo un carrusel que se activara cuando el tamano es chico-->
+            <div id="carouselproductos" class="carousel slide carousel-fade carrusel_recetas_arg">
+                <div class="carousel-inner carrusel_recetas2_arg">
+                    <div class="card producto_seccion_arg carousel-item active">
+                        <img src="./imagenes/ArgentinianfoodPortada.png" class="card-img-top d-block w-100" alt="Las comida argenta">
+                        <div class="card-body w-100 descripcion_pie_arg">
+                            <h3 class="card-title">Argentinian Food</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="./paginas/argentinian_food.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                    <div class="card producto_seccion_arg carousel-item">
+                        <img src="./imagenes/ItalianfoodPortada.png" class="card-img-top d-block w-100" alt="La mejor comida italiana">
+                        <div class="card-body w-100 descripcion_pie_arg">
+                            <h3 class="card-title">Italian food</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="./paginas/italian_food.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
+                    <div class="card producto_seccion_arg carousel-item">
+                        <img src="./imagenes/AsianFoodPortada.png" class="card-img-top d-block w-100" alt="La mejor comida asiatica">
+                        <div class="card-body w-100 descripcion_pie_arg">
+                            <h3 class="card-title">Asian food</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="./paginas/asian_food.html" class="btn btn-primary">ir</a>
+                        </div>
+                    </div>
+                    <div class="card producto_seccion_arg carousel-item">
+                        <img src="./imagenes/AmericanFood.png" class="card-img-top d-block w-100" alt="La mejor comida asiatica">
+                        <div class="card-body w-100 descripcion_pie_arg">
+                            <h3 class="card-title">American food</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="./paginas/american_food.html" class="btn btn-primary">Ir</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="productos">
-                    <a href="./paginas/argentinian_food.html">
-                        <div   class="producto_seccion">
-                            <img src="./imagenes/ArgentinianfoodPortada.png" alt="La mejor comida argenta">
-                            <h3>Argentinian food</h3>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductos" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselproductos" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Seccion visible para pantallas mayores a celular (sin carrusel)-->
+            <div class="productos_arg conteiner">
+                
+                <div class="row">
+                    <div class="card producto_seccion col-xs-12 col-sm-6 col-md-3">
+                        <img src="./imagenes/ArgentinianfoodPortada.png" class="card-img-top" alt="Las mejores empanadas">
+                        <div class="card-body descripcion_pie_arg">
+                          <h3 class="card-title">Argentinian food</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="./paginas/argentinian_food.html" class="btn btn-primary">Ir</a>
                         </div>
-                    </a>
-                    <a href="./paginas/italian_food.html">
-                        <div   class="producto_seccion">
-                            <img src="./imagenes/ItalianfoodPortada.png" alt="La mejor comida italiana">
-                            <h3>Italian food</h3>
+                    </div>
+                    <div class="card producto_seccion col-xs-12 col-sm-6 col-md-3">
+                        <img src="./imagenes/ItalianfoodPortada.png" class="card-img-top" alt="Las mejores empanadas">
+                        <div class="card-body descripcion_pie_arg">
+                          <h3 class="card-title">Italian food</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="./paginas/italian_food.html" class="btn btn-primary">Ir</a>
                         </div>
-                    </a>
-                    <a href="./paginas/asian_food.html">   
-                        <div   class="producto_seccion">
-                            <img src="./imagenes/AsianFoodPortada.png" alt="La mejor comida asiática">
-                            <h3>Asian food</h3>
+                    </div>
+                    <div class="card producto_seccion col-xs-12 col-sm-6 col-md-3">
+                        <img src="./imagenes/AsianFoodPortada.png" class="card-img-top" alt="Las mejores empanadas">
+                        <div class="card-body descripcion_pie_arg">
+                          <h3 class="card-title">Asian food</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="./paginas/asian_food.html" class="btn btn-primary">Ir</a>
                         </div>
-                    </a>
-                    <a href="./paginas/american_food.html"> 
-                        <div class="producto_seccion">
-                            <img src="./imagenes/AmericanFood.png" alt="La mejor comida americana">
-                            <h3>American food</h3>
+                    </div>
+                    <div class="card producto_seccion col-xs-12 col-sm-6 col-md-3">
+                        <img src="./imagenes/AmericanFood.png" class="card-img-top" alt="Las mejores empanadas">
+                        <div class="card-body descripcion_pie_arg">
+                          <h3 class="card-title">Argentinian food</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                          <a href="./paginas/american_food.html" class="btn btn-primary">Ir</a>
                         </div>
-                    </a>   
+                    </div>
                 </div>
+            </div>
         </section>
 
         <hr>
 
-        <section class="ubicacion_contacto_NS">
-                <div class="ubicacion">
+        <section class="">
+            <div class="row ubicacion_contacto_NS">
+                <div class="ubicacion col-xs-12 col-sm-6 col-md-3">
                     <h4>Nuestra ubicación</h4>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.441958579503!2d-64.28974458572488!3d-31.319165381436573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c4d122218ab%3A0xcaec276081a29a3e!2sTilqui%208625%2C%20X5018%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1671239755308!5m2!1ses-419!2sar"></iframe>
                     <p>Tilqui 8625, Córdoba, Argentina</p>
                 </div>
-                <div id="contacto" class="contacto">
+                <div id="contacto" class="contacto col-xs-12 col-sm-6 col-md-3">
                     <h4>Contacto</h4>
                     <div>
                         <p>Tel: +54 351-123456</p>
                         <p>E-mail: vazquezcristianr@gmail.com</p>
                     </div>
                 </div>
-                <div class="newslatters">
+                <div class="newslatters col-xs-12 col-sm-6 col-md-3">
                     <h4>NewSlatters</h4>
                     <p>Registrate y recibí nuestras novedades</p>
                     <div>
@@ -105,23 +250,32 @@
                         <button>Registrar</button>
                     </div>
                 </div>
-                <div class="redes">
+                <div class="redes col-xs-12 col-sm-6 col-md-3">
                     <a href="https://www.instagram.com/cristianvazquezr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.fb.com/cristian.vazquez.338/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://api.whatsapp.com/send/?phone=543516816757" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
+            </div>
         </section>
-
+    
         <hr>
-
-        <footer class="pie">
-            <img src="./imagenes/logo-rectangular-removebg-preview.png" alt="Logo del mejor lugar de comidas">
-            <div class="derechoautor">
-                <p>© 2022 Christofer Restaurant. Todos los derechos reservados. Diseñado por CRVAZQUEZ </p>
+    
+        <footer class="pie row">
+            <div class="col-sm-2 col-xs-12 imagen-pie">
+                <img src="./imagenes/logo-rectangular-removebg-preview.png" alt="Logo del mejor lugar de comidas">
+            </div>
+            <div class="derechoautor col-sm-8 col-xs-12">
+                <p>© 2022 Christofer Restaurant. Todos los derechos reservados.</p>
+                <p>Diseñado por CRVAZQUEZ</p>
+            </div>
+            <div class="col-sm-2 col-xs-0">
+                <!--vacio para generar la columna-->
             </div>
         </footer>
-    </div>
-
-
-</body>
-</html>
+        </div>
+    
+        <!--bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>
