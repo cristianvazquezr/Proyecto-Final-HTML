@@ -125,7 +125,8 @@ header{
 }
 
 .lista-menu a{
-    color: blanchedalmond;
+    font-family: 'Alegreya Sans', sans-serif;
+    color: rgb(245, 245, 220);
 }
 
 .lista-interna{
@@ -184,27 +185,27 @@ header{
     
 }
 
-.introducccion__textoIntro{
+.introduccion__textoIntro{
     display: flex;
     flex-direction: column;
     text-align: center;
+    gap: 10px;
     
 }
 
-.introducccion__textoIntro h1{
+.introduccion__textoIntro h1{
     font-weight: 900;
     font-size: 50px;
     font-family: 'Alegreya Sans', sans-serif;
-    gap: 10px;
-    color: beige;
+    color: rgb(245, 245, 220);
 }
-.introducccion__textoIntro h2{
+.introduccion__textoIntro h2{
     font-weight: 200;
     font-size: larger;
     color: beige;
 }
 
-/*formato segunda seccion(descripcion del chef) */
+/*formato segunda seccion */
 
 
 .seccion2__contendor{
@@ -262,11 +263,82 @@ header{
     border-bottom-right-radius: 3%;
 }
 
+.seccion2__contendor__imagen--arg{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.seccion2__contendor__imagen--it{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastasSecas.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+.seccion2__contendor__imagen--receta{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.seccion2__contendor__imagen--asia{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+.seccion2__contendor__imagen--arabic{
+    display: flex;
+    width: 300px;
+    height: 350px;
+    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/arabicFood.png);
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+}
+
+
 @media screen and (max-width:720px) {
     .seccion2__contendor__imagen--chef{
         display: none;
     }
-    .seccion2__contendor__contenido{
+    .seccion2__contendor__imagen--arg{
+        display: none;
+    }
+    .seccion2__contendor__imagen--it{
+        display: none;
+    }
+    .seccion2__contendor__imagen--asia{
+        display: none;
+    }
+    .seccion2__contendor__imagen--arabic{
+        display: none;
+    }
+    .seccion2__contendor__imagen--receta{
+        display: none;
+    }
+
+
+    .seccion2__contendor__contenido--chef{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -274,8 +346,55 @@ header{
         width: 80%;
         height: 350px;
         border-radius: 3%; 
-
     }
+    .seccion2__contendor__contenido--arg{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+    }
+    .seccion2__contendor__contenido--receta{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+    }
+    .seccion2__contendor__contenido--asia{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+    }
+    .seccion2__contendor__contenido--it{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastasSecas.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+    }
+
+    .seccion2__contendor__contenido--arabic{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/arabicFood.png);
+        width: 80%;
+        height: 350px;
+        border-radius: 3%; 
+    }
+
+
 
     .seccion2__contendor__contenido p{
         color: antiquewhite; 
@@ -285,8 +404,22 @@ header{
         font-weight: 300;
         padding-right: 5%;
         font-style: italic;
+        overflow: auto;
         
     }
+    .seccion2__contendor__contenido--receta p{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 46%, rgba(185,185,185,1) 47%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+        padding: 2%;
+        text-align: justify;
+        font-family: 'Prompt', sans-serif;
+        font-weight: 500;
+        padding-right: 5%;
+        font-style: italic;
+        
+    }
+         
 }
 
 /*seccion productos*/
@@ -366,7 +499,14 @@ header{
 .seccion3__carrusel__contenedor{
     width: 80%;
     
- }
+}
+.seccion3__carrusel button{
+    /*le piso propiedades que me trae por defecto del carrusel*/
+    width:5%;
+    top:40%;
+    align-items: flex-start;
+}
+
 
 .seccion3__carrusel__contenedor p{
     color:rgb(114, 114, 114);
@@ -400,12 +540,6 @@ header{
         width: 100%;
     }
 }
-
-
-
-
-
-
 
 /* linea divisoria*/
 
@@ -572,210 +706,6 @@ hr {
     
 }
 
-
-
-/* FORMATO PARA ARGENTINIANFOOD*/
-
-
-/*formato primera seccion(descripcion del producto) */
-
-
-.argenta{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    border-radius: 3%;
-    border:10cm;
-    border-color: aliceblue;
-}
-
-.descripcion_argenta{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
-    width: 30%;
-    height: 350px;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
-}
-
-.descripcion_argenta p{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    text-align: justify;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 300;
-    padding-right: 5%;
-    font-style: italic;
-    overflow: auto;
-    
-
-}
-.descripcion_argenta h2{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    font-size: xx-large;
-    padding-right: 5%;
-    letter-spacing: 0.05cm;
-
-}
-
-.imagen_argenta{
-    display: flex;
-    width: 300px;
-    height: 350px;
-    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
-    background-size: cover;
-    background-position: center;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-}
-
-@media screen and (max-width:720px) {
-    .imagen_argenta{
-        display: none;
-    }
-    .descripcion_argenta{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
-        width: 80%;
-        height: 350px;
-        border-radius: 3%; 
-
-    }
-
-    .descripcion_argenta p{
-        color:antiquewhite; 
-        padding: 2%;
-        text-align: justify;
-        font-family: 'Prompt', sans-serif;
-        font-weight: 300;
-        padding-right: 5%;
-        font-style: italic;
-        
-    }
-    
-}
-
-/*seccion productos argentinos*/
-
-.nuestros_productos_arg{
-    display: flex;
-    flex-direction: column;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
-}
-.titulo_productos_arg{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 300;
-    padding:1%;
-}
-.productos_arg img{
-    aspect-ratio: 3/4;
-    width:100%;
-    object-fit: cover;
-    border-radius: 3%;
-}
-
-.productos_arg p{
-    width:100%;
-    color:rgb(114, 114, 114)
-}
-.descripcion_pie_arg{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-}
-.descripcion_pie_arg a{
-    width: 100px;
-}
-
-.descripcion_pie_arg p{
-    padding-bottom: 6%;
-}
-
-.productos_arg {
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.productos_arg h3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 500;
-    padding:2%;
-    width: 100%;
-}
-
-.producto_seccion_arg{
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(26, 24, 24) ;
-    border: none;
-    gap: 7px;
-    padding-bottom: 10px;
-
-}
-
-/*Propiedades carrusel*/
-
-.carrusel_recetas_arg{
-    display: none;
-}
-.carrusel_recetas2_arg{
-    width: 80%;
-    
- }
-
-.carrusel_recetas2_arg p{
-    color:rgb(114, 114, 114);
-}
-.carrusel_recetas2_arg H3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: x-large;
-    font-weight: 500;
-    padding:2%;
-    width: 100%;
-}
- 
-.carrusel_recetas_arg img{
-    object-fit: cover;
-    border-radius: 3%;
-}
-
-/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
-@media screen and (max-width:576px){
-    .carrusel_recetas_arg{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .productos_arg{
-        display: none;
-
-    }
-    .producto_seccion_arg{
-        width: 100%;
-    }
-
-}
-
 .anadir_carro{
     display: flex;
     flex-direction: row;
@@ -786,382 +716,4 @@ hr {
     color: azure;
     font-size: xx-large;
     padding-top: 1.5%;
-}
-
-
-/* FORMATO PARA ITALIANFOOD*/
-
-
-/*formato primera seccion(descripcion del producto) */
-
-
-.italiana{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    border-radius: 3%;
-    border:10cm;
-    border-color: aliceblue;
-}
-
-.descripcion_italiana{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
-    width: 30%;
-    height: 350px;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
-}
-
-.descripcion_italiana p{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    text-align: justify;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 300;
-    padding-right: 5%;
-    font-style: italic;
-    overflow: auto;
-    
-
-}
-.descripcion_italiana h2{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    font-size: xx-large;
-    padding-right: 5%;
-    letter-spacing: 0.05cm;
-
-}
-
-.imagen_italiana{
-    display: flex;
-    width: 300px;
-    height: 350px;
-    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastas-italiana.png);
-    background-size: cover;
-    background-position: center;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-}
-
-/*seccion productos italianos*/
-
-.nuestros_productos_it{
-    display: flex;
-    flex-direction: column;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 2%;
-    padding-bottom: 2%;
-}
-.titulo_productos_it{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 300;
-    padding:1%;
-}
-
-.productos_it img{
-    aspect-ratio: 3/4;
-    width:100%;
-    object-fit: cover;
-    border-radius: 3%;
-}
-
-
-.productos_it p{
-    width:100%;
-    color:rgb(114, 114, 114)
-}
-
-.descripcion_pie_it{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
-}
-.descripcion_pie_it a{
-    width: 100px;
-}
-
-.descripcion_pie_it p{
-    padding-bottom: 6%;
-}
-
-.productos_it{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.productos_it h3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 500;
-    padding:2%;
-    width: 100%;
-}
-
-.producto_seccion_it{
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(26, 24, 24) ;
-    border: none;
-    gap: 7px;
-    padding-bottom: 10px;
-    
-}
-
-/*Propiedades carrusel*/
-
-.carrusel_recetas_it{
-    display: none;
-}
-
-.carrusel_recetas2_it{
-   width: 80%;
-}
-.carrusel_recetas2_it p{
-    color:rgb(114, 114, 114);
-}
-.carrusel_recetas2_it H3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: x-large;
-    font-weight: 500;
-    padding:2%;
-    width: 100%;
-}
- 
- 
-.carrusel_recetas_it img{
-    object-fit: cover;
-    border-radius: 3%;
-}
-
-/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
-@media screen and (max-width:576px){
-    .carrusel_recetas_it{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .productos_it{
-        display: none;
-
-    }
-    .producto_seccion_it{
-        width: 100%;
-    }
-}
-
-
-
-/* FORMATO PARA ASIANFOOD*/
-
-
-/*formato primera seccion(descripcion del producto) */
-
-.asiatica{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    border-radius: 3%;
-    border:10cm;
-    border-color: aliceblue;
-}
-
-.descripcion_asiatica{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
-    width: 30%;
-    height: 350px;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
-}
-
-.descripcion_asiatica p{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    text-align: justify;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 300;
-    padding-right: 5%;
-    font-style: italic;
-    overflow: auto;
-    
-
-}
-.descripcion_asiatica h2{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    font-size: xx-large;
-    padding-right: 5%;
-    letter-spacing: 0.05cm;
-
-}
-
-.imagen_asiatica{
-    display: flex;
-    width: 300px;
-    height: 350px;
-    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
-    background-size: cover;
-    background-position: center;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-}
-
-/*seccion productos asiaticos*/
-
-.nuestros_productos_asiaticos{
-    display: flex;
-    flex-direction: column;
-    padding-top: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 2%;
-}
-.titulo_productos_asiaticos{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 300;
-    padding:1%;
-}
-
-.productos_asiaticos{
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: center;
-}
-
-.productos_asiaticos img{
-    aspect-ratio: 3/4;
-    width:70%;
-    object-fit: cover;
-    border-radius: 3%;
-}
-.productos_asiaticos h3{
-    color: rgb(209, 207, 207);
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: large;
-    font-weight: 500;
-    padding:2%;
-    width: 55%;
-}
-
-.producto_seccion_asiaticos{
-    display: flex;
-    flex-direction: column;
-    
-}
-
-/* FORMATO PARA recetas*/
-
-
-/*formato primera seccion(descripcion de recetas) */
-
-
-.receta{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 1%;
-    padding-bottom: 2%;
-    border-radius: 3%;
-    border:10cm;
-    border-color: aliceblue;
-}
-
-.descripcion_receta{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
-    width: 30%;
-    height: 350px;
-    border-top-left-radius: 3%;
-    border-bottom-left-radius: 3%;
-}
-
-.descripcion_receta p{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    text-align: justify;
-    font-family: 'Prompt', sans-serif;
-    font-weight: 300;
-    padding-right: 5%;
-    font-style: italic;
-    overflow: auto;
-    
-
-}
-.descripcion_receta h2{
-    color: rgb(209, 207, 207);
-    padding: 2%;
-    font-family: 'Alegreya Sans', sans-serif;
-    font-weight: 900;
-    font-size: xx-large;
-    padding-right: 5%;
-    letter-spacing: 0.05cm;
-
-}
-
-.imagen_receta{
-    display: flex;
-    width: 300px;
-    height: 350px;
-    background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
-    background-size: cover;
-    background-position: center;
-    border-top-right-radius: 3%;
-    border-bottom-right-radius: 3%;
-}
-
-@media screen and (max-width:720px) {
-    .imagen_receta{
-        display: none;
-    }
-    .descripcion_receta{
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        background: linear-gradient(to right, rgba(29, 27,27 , 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
-        width: 80%;
-        height: 350px;
-        border-radius: 3%; 
-
-    }
-
-    .descripcion_receta p{
-        background: linear-gradient(90deg, rgba(255,255,255,1) 46%, rgba(185,185,185,1) 47%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 100%);
-        -webkit-background-clip: text;
-        color: transparent; 
-        padding: 2%;
-        text-align: justify;
-        font-family: 'Prompt', sans-serif;
-        font-weight: 300;
-        padding-right: 5%;
-        font-style: italic;
-        
-    }
-    
 }

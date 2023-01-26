@@ -35,7 +35,7 @@
                                 <li class="nav_links"><a class="dropdown-item" href="../paginas/argentinian_food.html">Argentinian food</a></li>
                                 <li class="nav_links"><a class="dropdown-item" href="../paginas/italian_food.html">Italian Food</a></li>
                                 <li class="nav_links"><a class="dropdown-item" href="../paginas/asian_food.html">Asian Food</a></li>
-                                <li class="nav_links"><a class="dropdown-item" href="../paginas/american_food.html">American food</a></li>
+                                <li class="nav_links"><a class="dropdown-item" href="../paginas/arabic_food.html">Arabic food</a></li>
                               </ul>
                             </li>
                             <li class="nav-item nav_links">
@@ -67,7 +67,7 @@
             </div> 
 
             <!--Cuando la pantalla es menor a 920px uso menu hamburguesa-->
-            <nav class="navbar bg-body-tertiary fixed-top encabezado_hamburguesa animate__animated animate__slideInDown">
+            <nav class="navbar bg-body-tertiary fixed-top encabezado_hamburguesa">
                 <div class="container-fluid contenedor_hamburguesa">
                   <a href="../index.html"><img class="logo" src="../imagenes/Logo.png" alt="Logo del mejor lugar de comidas"></a>
                   <button class="navbar-toggler boton_navbar" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -93,7 +93,7 @@
                                 <li><a class="dropdown-item" href="../paginas/argentinian_food.html">Argentian food</a></li>
                                 <li><a class="dropdown-item" href="../paginas/italian_food.html">Italian food</a></li>
                                 <li><a class="dropdown-item" href="../paginas/asian_food.html">Asian food</a></li>
-                                <li><a class="dropdown-item" href="../paginas/american_food.html">American food</a></li>
+                                <li><a class="dropdown-item" href="../paginas/arabic_food.html">Arabic food</a></li>
                             </ul>
                             </li>
                             <li class="nav-item">
@@ -115,160 +115,158 @@
             </nav>
         </header>
     
-    <section id="comida_argenta" class="comida_argenta animate__animated animate__slideInDown">
-        <div class="argenta">
-            <div class="descripcion_argenta">
-                <h2>Argentinian food</h2>
-                <p>La gastronomía argentina es una de las más sabrosas del mundo, debido a las increíbles materias primas que emplea, sobre todo la carne. La rica cultura gastronómica argentina combina los sabores de las cocinas europeas, especialmente la española y la italiana, con los de la cocina criolla e indígena, y es conocida por sus carnes de res de altísima calidad.</p>
+        <section id="comida_argenta" class="seccion2 animate__animated animate__slideInDown">
+            <div class="seccion2__contendor">
+                <div class="seccion2__contendor__contenido seccion2__contendor__contenido--arg">
+                    <h2>Argentinian food</h2>
+                    <p>La gastronomía argentina es una de las más sabrosas del mundo, debido a las increíbles materias primas que emplea, sobre todo la carne. La rica cultura gastronómica argentina combina los sabores de las cocinas europeas, especialmente la española y la italiana, con los de la cocina criolla e indígena, y es conocida por sus carnes de res de altísima calidad.</p>
+                </div>
+                <div class="seccion2__contendor__imagen--arg">
+                    <!--Contendor vacio donde voy a poner una imagen de fondo desde css-->
+                </div>
             </div>
-            <div class="imagen_argenta">
-                <!--Contendor vacio donde voy a poner una imagen de fondo desde css-->
-            </div>
-        </div>
-    </section>
-    
-    <!--linea divisoria-->
-    <hr>
+        </section>
+        
+        <!--linea divisoria-->
+        <hr>
 
-    <section id="nuestros_productos_arg" class="nuestros_productos_arg">
-        <div class="titulo_productos_arg">
-            <h2>Nuestras productos argentinos</h2>
-        </div>
+        <section id="nuestros_productos_arg" class="seccion3">
+            <div class="seccion3__titulo">
+                <h2>Nuestros productos argentinos</h2>
+            </div>
             <!--pongo un carrusel que se activara cuando el tamano es chico-->
-        <div id="carouselproductosArg" class="carousel slide carousel-fade carrusel_recetas_arg">
-            <div class="carousel-inner carrusel_recetas2_arg">
-                <div class="card producto_seccion_arg carousel-item active">
-                    <img src="../imagenes/empanadas-salteñas.png"class="card-img-top d-block w-100" alt="Las mejores empanadas">
-                        <div class="card-body w-100 descripcion_pie_arg">
+            <div id="carouselproductosArg" class="carousel slide carousel-fade seccion3__carrusel">
+                <div class="carousel-inner seccion3__carrusel__contenedor">
+                    <div class="card seccion3__items carousel-item active">
+                        <img src="../imagenes/empanadas-salteñas.png"class="card-img-top d-block w-100" alt="Las mejores empanadas">
+                            <div class="card-body w-100 seccion3__items__pie">
+                            <h3 class="card-title">Empanadas salteñas</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
+                    </div>
+                    <div class="card seccion3__items carousel-item">
+                        <img src="../imagenes/ribs-cerdo.png" class="card-img-top d-block w-100" alt="Los mejores ribs de cerdo">
+                        <div class="card-body w-100 seccion3__items__pie">
+                        <h3 class="card-title">Ribs de cerdo</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
+                    </div>
+                    <div class="card seccion3__items carousel-item">
+                        <img src="../imagenes/locro-argentino.png" class="card-img-top d-block w-100" alt="el mejor locro argentino">
+                        <div class="card-body w-100 seccion3__items__pie">
+                            <h3 class="card-title">Locro patrio</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
+                    </div>
+                    <div class="card seccion3__items carousel-item">
+                        <img src="../imagenes/mollejas.png" class="card-img-top d-block w-100" aalt="La mejor molleja al verdeo">
+                        <div class="card-body w-100 seccion3__items__pie">
+                            <h3 class="card-title">Mollejas al disco</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductosArg" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselproductosArg" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!--Seccion visible para pantallas mayores a celular (sin carrusel)-->
+            <div class="seccion3__grilla conteiner">
+                
+                <div class="row">
+                    <div class="card seccion3__items col-xs-12 col-sm-6 col-md-3">
+                        <img src="../imagenes/empanadas-salteñas.png" class="card-img-top" alt="Las mejores empanadas">
+                        <div class="card-body seccion3__items__pie">
                         <h3 class="card-title">Empanadas salteñas</h3>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card producto_seccion_arg carousel-item">
-                    <img src="../imagenes/ribs-cerdo.png" class="card-img-top d-block w-100" alt="Los mejores ribs de cerdo">
-                    <div class="card-body w-100 descripcion_pie_arg">
-                    <h3 class="card-title">Ribs de cerdo</h3>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="#" class="btn btn-primary boton">Añadir</a>
+                    <div class="card seccion3__items col-xs-12 col-sm-6 col-md-3">
+                        <img src="../imagenes/ribs-cerdo.png" class="card-img-top" alt="Los mejores ribs de cerdo">
+                        <div class="card-body seccion3__items__pie">
+                        <h3 class="card-title">Ribs de cerdo</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card producto_seccion_arg carousel-item">
-                    <img src="../imagenes/locro-argentino.png" class="card-img-top d-block w-100" alt="el mejor locro argentino">
-                    <div class="card-body w-100 descripcion_pie_arg">
+                    <div class="card seccion3__items col-xs-12 col-sm-6 col-md-3">
+                        <img src="../imagenes/locro-argentino.png" class="card-img-top" alt="el mejor locro argentino">
+                        <div class="card-body seccion3__items__pie">
                         <h3 class="card-title">Locro patrio</h3>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
                     </div>
-                </div>
-                <div class="card producto_seccion_arg carousel-item">
-                    <img src="../imagenes/mollejas.png" class="card-img-top d-block w-100" aalt="La mejor molleja al verdeo">
-                    <div class="card-body w-100 descripcion_pie_arg">
+                    <div class="card seccion3__items col-xs-12 col-sm-6 col-md-3">
+                        <img src="../imagenes/mollejas.png" class="card-img-top" alt="La mejor molleja al verdeo">
+                        <div class="card-body seccion3__items__pie">
                         <h3 class="card-title">Mollejas al disco</h3>
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                         <a href="#" class="btn btn-primary boton">Añadir</a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselproductosArg" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselproductosArg" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        <!--Seccion visible para pantallas mayores a celular (sin carrusel)-->
-        <div class="productos_arg conteiner">
-            
-            <div class="row">
-                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
-                    <img src="../imagenes/empanadas-salteñas.png" class="card-img-top" alt="Las mejores empanadas">
-                    <div class="card-body descripcion_pie_arg">
-                      <h3 class="card-title">Empanadas salteñas</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <a href="#" class="btn btn-primary boton">Añadir</a>
-                    </div>
-                </div>
-                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
-                    <img src="../imagenes/ribs-cerdo.png" class="card-img-top" alt="Los mejores ribs de cerdo">
-                    <div class="card-body descripcion_pie_arg">
-                      <h3 class="card-title">Ribs de cerdo</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <a href="#" class="btn btn-primary boton">Añadir</a>
-                    </div>
-                </div>
-                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
-                    <img src="../imagenes/locro-argentino.png" class="card-img-top" alt="el mejor locro argentino">
-                    <div class="card-body descripcion_pie_arg">
-                      <h3 class="card-title">Locro patrio</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <a href="#" class="btn btn-primary boton">Añadir</a>
-                    </div>
-                </div>
-                <div class="card producto_seccion_arg col-xs-12 col-sm-6 col-md-3">
-                    <img src="../imagenes/mollejas.png" class="card-img-top" alt="La mejor molleja al verdeo">
-                    <div class="card-body descripcion_pie_arg">
-                      <h3 class="card-title">Mollejas al disco</h3>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      <a href="#" class="btn btn-primary boton">Añadir</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <hr>
+        <hr>
 
-    <section class="">
-        <div class="row ubicacion_contacto_NS">
-            <div class="ubicacion col-xs-12 col-sm-6 col-md-3">
-                <h4>Nuestra ubicación</h4>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.441958579503!2d-64.28974458572488!3d-31.319165381436573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c4d122218ab%3A0xcaec276081a29a3e!2sTilqui%208625%2C%20X5018%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1671239755308!5m2!1ses-419!2sar"></iframe>
-                <p>Tilqui 8625, Córdoba, Argentina</p>
-            </div>
-            <div id="contacto" class="contacto col-xs-12 col-sm-6 col-md-3">
-                <h4>Contacto</h4>
-                <div>
-                    <p>Tel: +54 351-123456</p>
-                    <p>E-mail: vazquezcristianr@gmail.com</p>
+        <section class="">
+            <div class="row seccion4">
+                <div class="seccion4__ubicacion col-xs-12 col-sm-6 col-md-3">
+                    <h4>Nuestra ubicación</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.441958579503!2d-64.28974458572488!3d-31.319165381436573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329c4d122218ab%3A0xcaec276081a29a3e!2sTilqui%208625%2C%20X5018%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1671239755308!5m2!1ses-419!2sar"></iframe>
+                    <p>Tilqui 8625, Córdoba, Argentina</p>
+                </div>
+                <div id="contacto" class="seccion4__contacto col-xs-12 col-sm-6 col-md-3">
+                    <h4>Contacto</h4>
+                    <div>
+                        <p>Tel: +54 351-123456</p>
+                        <p>E-mail: vazquezcristianr@gmail.com</p>
+                    </div>
+                </div>
+                <div class="seccion4__newslatters col-xs-12 col-sm-6 col-md-3">
+                    <h4>NewSlatters</h4>
+                    <p>Registrate y recibí nuestras novedades</p>
+                    <div>
+                        <input type="Correo electrónico">
+                        <a href="#" class="btn btn-primary boton">Enviar</a>
+                    </div>
+                </div>
+                <div class="seccion4__redes col-xs-12 col-sm-6 col-md-3">
+                    <a href="https://www.instagram.com/cristianvazquezr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.fb.com/cristian.vazquez.338/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://api.whatsapp.com/send/?phone=543516816757" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
-            <div class="newslatters col-xs-12 col-sm-6 col-md-3">
-                <h4>NewSlatters</h4>
-                <p>Registrate y recibí nuestras novedades</p>
-                <div>
-                    <input type="Correo electrónico">
-                    <a href="#" class="btn btn-primary boton">Enviar</a>
-                </div>
-            </div>
-            <div class="redes col-xs-12 col-sm-6 col-md-3">
-                <a href="https://www.instagram.com/cristianvazquezr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.fb.com/cristian.vazquez.338/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://api.whatsapp.com/send/?phone=543516816757" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <hr>
+        <hr>
 
-    <footer class="pie row">
-        <div class="col-sm-2 col-xs-12 imagen-pie">
-            <img src="../imagenes/logo-rectangular-removebg-preview.png" alt="Logo del mejor lugar de comidas">
-        </div>
-        <div class="derechoautor col-sm-8 col-xs-12">
-            <p>© 2022 Christofer Restaurant. Todos los derechos reservados.</p>
-            <p>Diseñado por CRVAZQUEZ</p>
-        </div>
-        <div class="col-sm-2 col-xs-0">
-            <!--vacio para generar la columna-->
-        </div>
-    </footer>
+        <footer class="pie row">
+            <div class="col-sm-2 col-xs-12 pie__imagen">
+                <img src="../imagenes/logo-rectangular-removebg-preview.png" alt="Logo del mejor lugar de comidas">
+            </div>
+            <div class="pie__derechoautor col-sm-8 col-xs-12">
+                <p>© 2022 Christofer Restaurant. Todos los derechos reservados.</p>
+                <p>Diseñado por CRVAZQUEZ</p>
+            </div>
+            <div class="col-sm-2 col-xs-0">
+                <!--vacio para generar la columna-->
+            </div>
+        </footer>
     </div>
-
     <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
 </body>
 </html>
