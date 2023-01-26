@@ -1,0 +1,299 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background-color: rgb(26, 24, 24);
+    p{
+        margin-bottom: 0;
+    }
+}
+.contendor_principal{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+header{
+    display: flex;   
+    background-color: rgb(59, 59, 59,1 );
+    width: 100%;
+    gap:15%;
+    flex-direction: row;
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.encabezado{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.logo-encabezado{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.barra_navegacion{
+    display: flex;
+    gap:5%;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.navegacion{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: none;
+    
+}
+.nav_links{
+    padding: 4px;
+    a{
+        border-radius: var(--bs-nav-tabs-border-radius);
+        color:beige;
+        font-family: $font-family-h;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-decoration: none;
+        
+    }
+}
+.links_iconos{
+    display: flex;
+    font-size: x-large;
+    gap: 20px;
+    align-items: center;
+    a{
+        i{
+            color: blanchedalmond;
+        }
+    }
+}
+/* estilo para el menu tipo hamburguesa*/
+.encabezado_hamburguesa{
+    display: none;
+    padding: 0;
+    background-color: rgb(59, 59, 59,1 ); 
+}
+.contenedor_hamburguesa{
+    background-color: rgb(59, 59, 59,1 );
+}
+
+.boton_navbar{
+    border-color:blanchedalmond;
+    span{
+        display: inline-block;
+        width: 1.5em;
+        height: 1.5em;
+        vertical-align: middle;
+        i{
+            color: blanchedalmond;
+            font-size: xx-large;
+        }
+    }
+}
+.menu-interno{
+    background-color: rgb(59, 59, 59,1);
+}
+.logo-navbar{
+    height: 50px;
+    width: 50px;
+}
+.links_iconos{
+    .button{
+        color: blanchedalmond;
+        font-size: medium;
+    }
+}
+.btn-cerrar{
+    background-color: transparent;
+    border:none;
+}
+.lista-menu{
+    a{
+        color: blanchedalmond;
+
+    }
+}
+.lista-interna{
+    background-color: rgb(37, 37, 37);
+    a{
+        color: blanchedalmond;
+    }
+}
+.submenu-productos{
+    background-color: rgb(56, 56, 56) ;
+}
+.dropdown-buscar{
+    transform: translate(100px, 70px)!important;
+    width: 320px;
+
+}
+.input-busqueda{
+    width: auto;
+}
+.formulario-busqueda{
+    margin-left: 2%;
+}
+.links_iconos {
+    i{
+    color: blanchedalmond;
+    font-size: x-large;
+    }
+}
+@media screen and (max-width:920px) {
+    .encabezado_hamburguesa{
+        display: flex;
+        position: sticky;
+        width: 100%;      
+    }
+    .encabezado{
+        display: none;  
+    }
+} 
+/* linea divisoria*/
+
+hr {
+    border: 0;
+    height: 2px; 
+    text-align: center; 
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+}
+
+/* Contacto y ubicación*/
+.ubicacion_contacto_NS{
+    display:flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: space-between;
+    justify-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 100%;
+    h4{
+        color: rgb(209, 207, 207);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: x-large;
+        font-weight: 500;
+    }
+}
+
+.ubicacion iframe{
+    width:150px;  
+
+}
+
+
+.ubicacion{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: center;
+    p{
+        color: rgb(209, 207, 207);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 90%;
+        font-weight: 300;  
+    }
+}
+.contacto{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    p{
+        color: rgb(209, 207, 207);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 100%;
+        font-weight: 300;
+    }
+}
+.newslatters{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 1rem;
+    p{
+        color: rgb(209, 207, 207);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: 100%;
+        font-weight: 300;
+    }
+}
+.boton{
+    background: linear-gradient(90deg, rgba(10,10,10,0.9) 0%, rgba(33,33,33,0.9) 31%, rgba(33,33,33,0.9) 61%, rgba(10,10,10,0.9) 100%);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 800;
+    border:none;
+    box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.5);
+}
+.redes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    a{
+        i{
+            color: blanchedalmond;
+            font-size: xx-large;
+        }
+    } 
+}
+@media screen and (max-width:576px) {
+    .ubicacion_contacto_NS{
+        display:flex;
+        flex-direction: column-reverse;
+        padding: 1%;
+        justify-content: space-between;
+        justify-items: center;
+        flex-wrap: wrap;
+        flex-shrink: 1;
+        width: 100%;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: flex-start;
+        padding-bottom: 1rem;
+        
+    }
+}
+/*formato footer*/
+.pie{
+    display: flex;
+    padding: 0.1rem;
+    width: 100%; 
+    img{
+        aspect-ratio: 3/2;
+        width: 118px;
+    }
+}
+
+.derechoautor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        color: rgb(209, 207, 207);
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: small;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    .imagen-pie{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+    }
+    
+}

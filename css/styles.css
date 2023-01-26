@@ -88,10 +88,7 @@ header{
 .encabezado_hamburguesa{
     display: none;
     padding: 0;
-    background-color: rgb(59, 59, 59,1 );
-    
-
-    
+    background-color: rgb(59, 59, 59,1 ); 
 }
 .contenedor_hamburguesa{
     background-color: rgb(59, 59, 59,1 );
@@ -99,7 +96,6 @@ header{
 
 .boton_navbar{
     border-color:blanchedalmond;
-
 }
 .boton_navbar span{
     display: inline-block;
@@ -167,8 +163,6 @@ header{
         width: 100%;      
     }
     
-    
-
     .encabezado{
         display: none;  
     }
@@ -190,28 +184,30 @@ header{
     
 }
 
-.texto_intro{
+.introducccion__textoIntro{
     display: flex;
     flex-direction: column;
-    color: beige;
     text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
-    gap: 10px;
+    
 }
 
-.texto_intro h1{
+.introducccion__textoIntro h1{
     font-weight: 900;
     font-size: 50px;
+    font-family: 'Alegreya Sans', sans-serif;
+    gap: 10px;
+    color: beige;
 }
-.texto_intro h4{
+.introducccion__textoIntro h2{
     font-weight: 200;
     font-size: larger;
+    color: beige;
 }
 
 /*formato segunda seccion(descripcion del chef) */
 
 
-.el_chef{
+.seccion2__contendor{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -222,7 +218,7 @@ header{
     border-color: aliceblue;
 }
 
-.descripcion_chef{
+.seccion2__contendor__contenido{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -233,7 +229,7 @@ header{
     border-bottom-left-radius: 3%;
 }
 
-.descripcion_chef p{
+.seccion2__contendor__contenido p{
     color: rgb(209, 207, 207);
     padding: 2%;
     text-align: justify;
@@ -245,7 +241,7 @@ header{
     
 
 }
-.descripcion_chef h2{
+.seccion2__contendor__contenido h2{
     color: rgb(209, 207, 207);
     padding: 2%;
     font-family: 'Alegreya Sans', sans-serif;
@@ -255,8 +251,7 @@ header{
     letter-spacing: 0.05cm;
 
 }
-
-.imagen_chef{
+.seccion2__contendor__imagen--chef{
     display: flex;
     width: 300px;
     height: 350px;
@@ -268,10 +263,10 @@ header{
 }
 
 @media screen and (max-width:720px) {
-    .imagen_chef{
+    .seccion2__contendor__imagen--chef{
         display: none;
     }
-    .descripcion_chef{
+    .seccion2__contendor__contenido{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -282,7 +277,7 @@ header{
 
     }
 
-    .descripcion_chef p{
+    .seccion2__contendor__contenido p{
         color: antiquewhite; 
         padding: 2%;
         text-align: justify;
@@ -296,7 +291,7 @@ header{
 
 /*seccion productos*/
 
-.nuestros_productos{
+.seccion3{
     display: flex;
     flex-direction: column;
     padding-top: 1%;
@@ -304,7 +299,7 @@ header{
     padding-right: 2%;
     padding-bottom: 2%;
 }
-.titulo_productos{
+.seccion3__titulo{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: large;
@@ -312,40 +307,40 @@ header{
     padding:1%;
 }
 
-.productos img{
+.seccion3__grilla img{
     aspect-ratio: 3/4;
     width:100%;
     object-fit: cover;
     border-radius: 3%;
 }
 
-.productos p{
+.seccion3__grilla p{
     width:100%;
     color:rgb(114, 114, 114)
 }
 
-.descripcion_pie{
+.seccion3__items__pie{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
 }
-.descripcion_pie a{
+.seccion3__items__pie a{
     width: 100px;
 }
 
-.descripcion_pie p{
+.seccion3__items__pie p{
     padding-bottom: 6%;
 }
 
-.productos{
+.seccion3__grilla{
     display:flex;
     flex-direction: row;
     width: 100%;
     justify-content: center;
 }
 
-.productos h3{
+.seccion3__grilla h3{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: large;
@@ -354,7 +349,7 @@ header{
     width: 100%;
 }
 
-.producto_seccion{
+.seccion3__items{
     display: flex;
     flex-direction: column;
     background-color:rgb(26, 24, 24) ;
@@ -363,6 +358,55 @@ header{
     padding-bottom: 10px;
     
 }
+/*Propiedades carrusel*/
+
+.seccion3__carrusel{
+    display: none;
+}
+.seccion3__carrusel__contenedor{
+    width: 80%;
+    
+ }
+
+.seccion3__carrusel__contenedor p{
+    color:rgb(114, 114, 114);
+}
+.seccion3__carrusel__contenedor H3{
+    color: rgb(209, 207, 207);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: x-large;
+    font-weight: 500;
+    padding:2%;
+    width: 100%;
+}
+ 
+.seccion3__carrusel img{
+    object-fit: cover;
+    border-radius: 3%;
+}
+
+/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
+@media screen and (max-width:576px){
+    .seccion3__carrusel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .seccion3__grilla{
+        display: none;
+
+    }
+    .seccion3__items{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
 /* linea divisoria*/
 
 hr {
@@ -373,7 +417,7 @@ hr {
 }
 
 /* Contacto y ubicación*/
-.ubicacion_contacto_NS{
+.seccion4{
     display:flex;
     flex-direction: row;
     padding: 1%;
@@ -384,13 +428,12 @@ hr {
     width: 100%;
 }
 
-.ubicacion iframe{
+.seccion4__ubicacion iframe{
     width:150px;  
 
 }
 
-
-.ubicacion{
+.seccion4__ubicacion{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -399,7 +442,7 @@ hr {
     align-items: flex-start;
     justify-content: center;
 }
-.ubicacion p{
+.seccion4__ubicacion p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 90%;
@@ -407,7 +450,7 @@ hr {
     
 }
 
-.contacto{
+.seccion4__contacto{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -415,7 +458,7 @@ hr {
 }
 
 
-.contacto p{
+.seccion4__contacto p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 100%;
@@ -423,7 +466,7 @@ hr {
 }
 
 
-.newslatters{
+.seccion4__newslatters{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -431,7 +474,7 @@ hr {
 }
 
 
-.newslatters p{
+.seccion4__newslatters p{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 100%;
@@ -447,10 +490,9 @@ hr {
     font-weight: 800;
     border:none;
     box-shadow: 8px 8px 10px 1px rgba(0,0,0,0.5);
-    
-    }
+}
 
-.redes{
+.seccion4__redes{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -458,12 +500,12 @@ hr {
     
 }
 
-.redes a i{
+.seccion4__redes a i{
     color: blanchedalmond;
     font-size: xx-large;
 }
 
-.ubicacion_contacto_NS h4{
+.seccion4 h4{
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
     font-size: x-large;
@@ -471,7 +513,7 @@ hr {
 }
 
 @media screen and (max-width:576px) {
-    .ubicacion_contacto_NS{
+    .seccion4{
         display:flex;
         flex-direction: column-reverse;
         padding: 1%;
@@ -482,7 +524,7 @@ hr {
         width: 100%;
     }
 
-    .redes{
+    .seccion4__redes{
         display: flex;
         justify-content: flex-start;
         padding-bottom: 1rem;
@@ -505,7 +547,7 @@ hr {
     width: 118px;
 }
 
-.derechoautor{
+.pie__derechoautor{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -513,7 +555,7 @@ hr {
     
 }
 
-.derechoautor p{
+.pie__derechoautor p{
     text-align: center;
     color: rgb(209, 207, 207);
     font-family: 'Alegreya Sans', sans-serif;
@@ -522,7 +564,7 @@ hr {
 }
 
 @media screen and (max-width:576px) {
-    .imagen-pie{
+    .pie__imagen{
         display: flex;
         justify-content: center;
         padding-bottom: 1rem;
