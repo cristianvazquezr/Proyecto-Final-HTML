@@ -195,13 +195,13 @@ header{
 
 .introduccion__textoIntro h1{
     font-weight: 900;
-    font-size: 50px;
+    font-size: 100px;
     font-family: 'Alegreya Sans', sans-serif;
     color: rgb(245, 245, 220);
 }
 .introduccion__textoIntro h2{
     font-weight: 200;
-    font-size: larger;
+    font-size: xx-large;
     color: beige;
 }
 
@@ -717,3 +717,4 @@ hr {
     font-size: xx-large;
     padding-top: 1.5%;
 }
+

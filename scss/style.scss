@@ -2,5 +2,8 @@
 @import './base/listas';
 @import './base/mapas';
 @import './base/extends';
+@import './base/mixin';
 
-@import './components/body-header.scss'
+@import './components/animacion-portada.scss';
+@import './components/body-header-footer.scss';
+@import './components/contenido.scss';

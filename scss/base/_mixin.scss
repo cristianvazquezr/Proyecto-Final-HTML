@@ -1,0 +1,68 @@
+@mixin disposicion($display, $direccion, $alineacion,$justificacion){
+    display: $display;
+    flex-direction: $direccion;
+    align-items: $alineacion;
+    justify-content: $justificacion;
+}
+
+@mixin contenedor-imagen ($imagen){
+    display: flex;
+    width: 350px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+
+    @if $imagen == chef{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/chef.png);
+        
+    }
+    @else if $imagen == arg{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+    }
+    @else if $imagen == it{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastasSecas.png);
+    }
+    @else if $imagen == receta{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+    }
+    @else if $imagen == asia{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
+    }
+    @else if $imagen == arabic{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/arabicFood.png);
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+@mixin contenedor-contenido ($imagen){
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    height: 350px;
+    border-radius: 3%;
+    @if $imagen == chef{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/chef.png);
+    }
+    @else if $imagen == arg{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comida-arg.png);
+    }
+    @else if $imagen == it{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/pastasSecas.png);
+    }
+    @else if $imagen == receta{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/recetas2.png);
+    }
+    @else if $imagen == asia{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/comidaAsiatica.png);
+    }
+    @else if $imagen == arabic{
+        background: linear-gradient(to right, rgba(29, 27, 27, 1), rgba(199, 199, 199, 0.1)), url(../imagenes/arabicFood.png);
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+}

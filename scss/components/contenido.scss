@@ -1,0 +1,268 @@
+/*Introduccion contenido de la pagina*/
+
+.introduccion{
+    @include disposicion(flex,row,center,center);
+    height: 100vh;
+    background: linear-gradient(to right, rgb(0,0,0,.5),rgb(0,0,0,.5)), url(../imagenes/Comida-inicio.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.introduccion__textoIntro{
+    @include disposicion(flex,column,none,none);
+    text-align: center;
+    gap: 10x;
+    h1{
+        font-family: $font-family-h;
+        color:$color-letras;
+        font-weight: map-get($tamanoLetra , 900);
+        font-size: 100px;
+        @media screen and (max-width:576px) {
+            font-size: 17vw;
+        } 
+    }
+    h2{
+        font-weight: map-get($tamanoLetra , 200);
+        font-size: xx-large;
+        color: $color-letras;
+        @media screen and (max-width:576px) {
+            font-size: 5.2vw;
+        } 
+    }
+
+}
+
+/*formato segunda seccion */
+
+.seccion2__contendor{
+    @include disposicion(flex,row, none, center);
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 3%;
+    border:10cm;
+    border-color: aliceblue;
+}
+.seccion2__contendor__contenido{
+    @include disposicion(flex,column, none, flex-start);
+    background: linear-gradient(to left, rgba(199, 199, 199, 0.01),rgb(199, 199, 199, 0.1));
+    width: 350px;
+    height: 400px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    p{
+        color:$color-letras;
+        font-family: $font-family-p;
+        padding: 2%;
+        font-weight: map-get($tamanoLetra , 300);
+        padding-right: 5%;
+        font-style: italic;
+        overflow: auto;
+        text-align: justify;
+    }
+    h2{
+        font-family: $font-family-h;
+        color:$color-letras;
+        padding: 2%;
+        font-weight: map-get($tamanoLetra , 900);
+        font-size: xx-large;
+        padding-right: 5%;
+        letter-spacing: 0.05cm;
+           
+        }
+        
+
+    }
+    .seccion2__contendor__imagen--chef{
+    @include contenedor-imagen(chef);
+}
+.seccion2__contendor__imagen--arg{
+    @include contenedor-imagen(arg);
+}
+.seccion2__contendor__imagen--it{
+    @include contenedor-imagen(it);
+}
+.seccion2__contendor__imagen--receta{
+    @include contenedor-imagen(receta);
+}
+.seccion2__contendor__imagen--asia{
+    @include contenedor-imagen(asia);
+}
+.seccion2__contendor__imagen--arabic{
+    @include contenedor-imagen(arabic);
+}
+
+@media screen and (max-width:720px) {
+    .seccion2__contendor__imagen--chef{
+        display: none;
+    }
+    .seccion2__contendor__imagen--arg{
+        display: none;
+    }
+    .seccion2__contendor__imagen--it{
+        display: none;
+    }
+    .seccion2__contendor__imagen--asia{
+        display: none;
+    }
+    .seccion2__contendor__imagen--arabic{
+        display: none;
+    }
+    .seccion2__contendor__imagen--receta{
+        display: none;
+    }
+
+    .seccion2__contendor__contenido--chef{
+        @include contenedor-contenido(chef);
+
+    }
+    .seccion2__contendor__contenido--arg{
+        @include contenedor-contenido(arg);
+    }
+    .seccion2__contendor__contenido--receta{
+        @include contenedor-contenido(receta);
+    }
+    .seccion2__contendor__contenido--asia{
+        @include contenedor-contenido(asia); 
+    }
+    .seccion2__contendor__contenido--it{
+        @include contenedor-contenido(it);
+    }
+
+    .seccion2__contendor__contenido--arabic{
+        @include contenedor-contenido(arabic); 
+    }
+
+    .seccion2__contendor__contenido p{
+        color: $color-letras; 
+        padding: 2%;
+        text-align: justify;
+        font-family: $font-family-p;
+        font-weight: map-get($tamanoLetra , 300);
+        padding-right: 5%;
+        font-style: italic;
+        overflow: auto;
+        
+    }
+    .seccion2__contendor__contenido--receta p{
+        background: linear-gradient(90deg, rgba(255,255,255,1) 46%, rgba(185,185,185,1) 47%, rgba(0,0,0,1) 48%, rgba(0,0,0,1) 100%);
+        -webkit-background-clip: text;
+        color: transparent; 
+        padding: 2%;
+        text-align: justify;
+        font-family: 'Prompt', sans-serif;
+        font-weight: map-get($tamanoLetra , 500);
+        padding-right: 5%;
+        font-style: italic;
+        
+    }
+         
+}
+.seccion3{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+}
+.seccion3__titulo{
+    color: $color-letras;
+    font-family: $font-family-h;
+    font-size: large;
+    font-weight: map-get($tamanoLetra, 300);
+    padding:1%;
+}
+.seccion3__grilla{
+    @include disposicion(flex,row,none,center);
+    img{
+        aspect-ratio: 3/4;
+        width:100%;
+        object-fit: cover;
+        border-radius: 3%;
+    }
+    p{
+        width:100%;
+        color:rgb(114, 114, 114)
+    }
+    h3{
+        color: $color-letras;
+        font-family: $font-family-p;
+        font-size: large;
+        font-weight: map-get($tamanoLetra , 500);
+        padding:2%;
+        width: 100%;
+    }
+}
+.seccion3__items__pie{
+    @include disposicion(flex,column,none,space-between);
+    padding: 0;
+    a{
+        width: 100px;
+    }
+    p{
+        padding-bottom: 6%;
+    }
+}
+.seccion3__items{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(26, 24, 24) ;
+    border: none;
+    gap: 7px;
+    padding-bottom: 10px;
+    
+}
+
+/*Propiedades carrusel*/
+
+.seccion3__carrusel{
+    display: none;
+    button{
+        /*le piso propiedades que me trae por defecto del carrusel*/
+        width:5%;
+        top:40%;
+        align-items: flex-start;
+    }
+    img{
+        object-fit: cover;
+        border-radius: 3%;
+    }
+}
+.seccion3__carrusel__contenedor{
+    width: 80%;
+    p{
+        color:rgb(114, 114, 114);
+    }
+    h3{
+        color: $color-letras;
+        font-family: $font-family-h;
+        font-size: x-large;
+        font-weight: map-get($tamanoLetra, 500);
+        padding:2%;
+        width: 100%;
+    }
+    
+}
+/*Oculto mi grilla y habilito la vista del carrusel cuando es vista de celular*/
+@media screen and (max-width:576px){
+    .seccion3__carrusel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .seccion3__grilla{
+        display: none;
+
+    }
+    .seccion3__items{
+        width: 100%;
+    }
+}
+/* linea divisoria*/
+
+hr {
+    border: 0;
+    height: 2px; 
+    text-align: center; 
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+}
