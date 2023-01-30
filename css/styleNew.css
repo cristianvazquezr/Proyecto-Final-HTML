@@ -731,11 +731,8 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: none;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 0;
-}
-.seccion3__items__pie a {
-  width: 100px;
 }
 .seccion3__items__pie p {
   padding-bottom: 6%;
@@ -748,6 +745,9 @@ hr {
   border: none;
   gap: 7px;
   padding-bottom: 10px;
+}
+.seccion3__items a {
+  width: 100px;
 }
 
 /*Propiedades carrusel*/

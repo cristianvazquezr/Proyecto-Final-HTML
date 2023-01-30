@@ -194,11 +194,8 @@
     }
 }
 .seccion3__items__pie{
-    @include disposicion(flex,column,none,space-between);
+    @include disposicion(flex,column,none,flex-start);
     padding: 0;
-    a{
-        width: 100px;
-    }
     p{
         padding-bottom: 6%;
     }
@@ -210,6 +207,9 @@
     border: none;
     gap: 7px;
     padding-bottom: 10px;
+    a{
+        width: 100px;
+    }
     
 }
 
