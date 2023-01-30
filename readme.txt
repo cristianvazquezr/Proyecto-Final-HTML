@@ -1,10 +1,10 @@
  - La idea principal es hacer una pagina de un chef en la cual se va poder comprar comida casera y recetas.
  - se realizó un index donde se puede leer la descripción del chef (quienes somos), a su vez se muestran los tipos de productos
-que se tienen disponible. La idea es que en la seccion de los productos mas adelante se pueda hacer que eso vaya mostrando distito contenido o se pueda
-mover de la izquierda a la derecha o vise-versa.
-- Desde el index se puede acceder a las categorias de comidas (italiana, argentina, americana, etc) si se da click se ingresa a la pagina de esa categoria
-y se pueden ver las comidas disponibles y agregarlas al carro de compra. Para esta entrega solo se crearon las paginas para las categorias "Argentinian food", 
-"italian Food" y "asian Food" la pagina de receta donde se van a encontrar las recetas disponibles por categorias.
+que se tienen disponible. 
+- Desde el index se puede acceder a las categorias de comidas (italiana, argentina, asiatica, etc) si se da click se ingresa a la pagina de esa categoria
+y se pueden ver las comidas disponibles y agregarlas al carro de compra. 
+- se paso todo el codigo a scss, el "whatcheo" se realizó en el archivo styleNew.css y este fue el que se linkeo a todos los html. 
+- En scss se usario variables, mapas y mixin. Dentro del mixin se usaron condicionales para determinar con un nombre la imagen que tenia que aparecer de fondo
 
 whimsical
 
