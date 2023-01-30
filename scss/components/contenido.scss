@@ -67,7 +67,15 @@
         font-size: xx-large;
         padding-right: 5%;
         letter-spacing: 0.05cm;
-           
+        }
+    h2{
+        font-family: $font-family-h;
+        color:$color-letras;
+        padding: 2%;
+        font-weight: map-get($tamanoLetra , 900);
+        font-size: xx-large;
+        padding-right: 5%;
+        letter-spacing: 0.05cm;
         }
         
 

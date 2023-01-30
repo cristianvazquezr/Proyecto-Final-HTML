@@ -499,6 +499,15 @@ hr {
   padding-right: 5%;
   letter-spacing: 0.05cm;
 }
+.seccion2__contendor__contenido h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  color: rgb(209, 207, 207);
+  padding: 2%;
+  font-weight: 900;
+  font-size: xx-large;
+  padding-right: 5%;
+  letter-spacing: 0.05cm;
+}
 
 .seccion2__contendor__imagen--chef {
   display: flex;
