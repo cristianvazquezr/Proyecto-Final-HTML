@@ -215,6 +215,9 @@ header {
 .menu-interno {
   background-color: rgb(59, 59, 59);
 }
+input[type=checkbox]:checked ~ .menu-interno {
+	visibility: hidden;
+}
 
 .logo-navbar {
   height: 50px;
