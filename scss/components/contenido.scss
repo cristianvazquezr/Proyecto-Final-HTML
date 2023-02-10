@@ -274,3 +274,124 @@ hr {
     text-align: center; 
     background: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
 }
+
+/*Formulario de contacto*/
+.contacto{
+    @include disposicion(flex,row,none, none);
+    justify-content: space-evenly;
+    aside{
+        @include disposicion(flex,column,center, center);
+        position: fixed;
+        top:50vh;
+        right:1vw;
+        div{
+            @include disposicion(flex,column,center, none);
+            gap:10px;
+            a{
+                i{
+                    font-size: xx-large;
+                    color:blanchedalmond;
+                }
+            }
+        }
+    }
+    @media  screen and (max-width:576px){
+        aside{
+            display: none;
+        }
+
+    } 
+}
+.contacto_formulario{
+    @include disposicion(flex,column,none, none);
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-radius: 5%;
+    border: 2px rgb(128, 123, 123) solid;
+    H1{
+        font-family: $font-family-h;
+        color:$color-titulo;
+        font-size: 65px;
+    }
+    H2{
+        font-family: $font-family-h;
+        color:$color-letras;
+        font-size: large;
+    }
+    
+    form{
+        fieldset{
+            @include disposicion(flex,column,none, none);
+            gap:10px;
+            border-top: 2px;
+            border-style: groove;
+            border-color: gray;
+            legend{
+                color: $color-letras;
+            }
+            label{
+                color:$color-letras;
+            }
+            input{
+                color:rgba(145, 145, 145, 0.938)
+            }
+            textarea{
+                color:rgba(145, 145, 145, 0.938)
+            }
+            .boton{
+                width: 100px;
+            }
+        }
+
+    }
+    @media  screen and (max-width:576px){
+        H1{
+            font-size: 9vw;
+        }
+        H2{
+            font-family: $font-family-h;
+            color:$color-letras;
+            font-size: 3vw;
+        }
+        legend{
+            font-size: 5vw;
+        }
+        input{
+            font-size: 3vw;
+        }
+        label{
+            font-size: 3vw;
+        }
+        textarea{
+            font-size: 3vw;
+        }
+        .boton--hidden{
+            display: none;
+        }                
+    }
+}
+.contacto_formulario_redes{
+    gap:10px;
+    top:50vh;
+    right:1vw;
+    div{
+        display: flex;
+        gap: 10px;
+        a{
+            i{
+                font-size: xx-large;
+                color:blanchedalmond;
+            }
+        }
+    }
+    
+    display: none;
+    @media  screen and (max-width:576px){
+        @include disposicion(flex,row,center, space-between);
+    }
+}

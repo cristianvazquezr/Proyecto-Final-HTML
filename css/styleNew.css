@@ -176,6 +176,9 @@ header {
   text-transform: uppercase;
   text-decoration: none;
 }
+.nav_links a:focus, .nav_links a:hover {
+  color: rgb(243, 231, 66);
+}
 
 .links_iconos {
   display: flex;
@@ -214,9 +217,6 @@ header {
 
 .menu-interno {
   background-color: rgb(59, 59, 59);
-}
-input[type=checkbox]:checked ~ .menu-interno {
-	visibility: hidden;
 }
 
 .logo-navbar {
@@ -812,6 +812,139 @@ hr {
   height: 2px;
   text-align: center;
   background: linear-gradient(to left, rgb(0, 0, 0), rgb(255, 255, 255), rgb(0, 0, 0));
+}
+
+/*Formulario de contacto*/
+.contacto {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: none;
+  justify-content: space-evenly;
+}
+.contacto aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50vh;
+  right: 1vw;
+}
+.contacto aside div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: none;
+  gap: 10px;
+}
+.contacto aside div a i {
+  font-size: xx-large;
+  color: blanchedalmond;
+}
+@media screen and (max-width: 576px) {
+  .contacto aside {
+    display: none;
+  }
+}
+
+.contacto_formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  margin-top: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-radius: 5%;
+  border: 2px rgb(128, 123, 123) solid;
+}
+.contacto_formulario H1 {
+  font-family: "Alegreya Sans", sans-serif;
+  color: gold;
+  font-size: 65px;
+}
+.contacto_formulario H2 {
+  font-family: "Alegreya Sans", sans-serif;
+  color: rgb(209, 207, 207);
+  font-size: large;
+}
+.contacto_formulario form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: none;
+  justify-content: none;
+  gap: 10px;
+  border-top: 2px;
+  border-style: groove;
+  border-color: gray;
+}
+.contacto_formulario form fieldset legend {
+  color: rgb(209, 207, 207);
+}
+.contacto_formulario form fieldset label {
+  color: rgb(209, 207, 207);
+}
+.contacto_formulario form fieldset input {
+  color: rgba(145, 145, 145, 0.938);
+}
+.contacto_formulario form fieldset textarea {
+  color: rgba(145, 145, 145, 0.938);
+}
+.contacto_formulario form fieldset .boton {
+  width: 100px;
+}
+@media screen and (max-width: 576px) {
+  .contacto_formulario H1 {
+    font-size: 9vw;
+  }
+  .contacto_formulario H2 {
+    font-family: "Alegreya Sans", sans-serif;
+    color: rgb(209, 207, 207);
+    font-size: 3vw;
+  }
+  .contacto_formulario legend {
+    font-size: 5vw;
+  }
+  .contacto_formulario input {
+    font-size: 3vw;
+  }
+  .contacto_formulario label {
+    font-size: 3vw;
+  }
+  .contacto_formulario textarea {
+    font-size: 3vw;
+  }
+  .contacto_formulario .boton--hidden {
+    display: none;
+  }
+}
+
+.contacto_formulario_redes {
+  gap: 10px;
+  top: 50vh;
+  right: 1vw;
+  display: none;
+}
+.contacto_formulario_redes div {
+  display: flex;
+  gap: 10px;
+}
+.contacto_formulario_redes div a i {
+  font-size: xx-large;
+  color: blanchedalmond;
+}
+@media screen and (max-width: 576px) {
+  .contacto_formulario_redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=styleNew.css.map */

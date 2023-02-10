@@ -62,7 +62,9 @@ header{
         font-weight: map-get($tamanoLetra , 400);
         text-transform: uppercase;
         text-decoration: none;
-        
+        &:focus,&:hover{
+            color: rgb(243, 231, 66);
+        }
     }
 }
 .links_iconos{
