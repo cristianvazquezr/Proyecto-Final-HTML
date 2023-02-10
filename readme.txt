@@ -2,9 +2,9 @@
  - se realizó un index donde se puede leer la descripción del chef (quienes somos), a su vez se muestran los tipos de productos
 que se tienen disponible. 
 - Desde el index se puede acceder a las categorias de comidas (italiana, argentina, asiatica, etc) si se da click se ingresa a la pagina de esa categoria
-y se pueden ver las comidas disponibles y agregarlas al carro de compra. 
+y se pueden ver las comidas disponibles y agregarlas al carro de compra (aun no disponible). 
 - se paso todo el codigo a scss, el "whatcheo" se realizó en el archivo styleNew.css y este fue el que se linkeo a todos los html. 
-- En scss se usario variables, mapas y mixin. Dentro del mixin se usaron condicionales para determinar con un nombre la imagen que tenia que aparecer de fondo
+- En scss se usaron variables, mapas y mixin. Dentro del mixin se usaron condicionales para determinar con un nombre la imagen que tenia que aparecer de fondo.
 
 whimsical
 
